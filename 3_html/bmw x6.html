@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <title>BMW X6</title>
+    <style>
+        body {
+            background: #c7b39b url(image/bmw-x6.jpg);
+            color: #000000; /* Цвет текста */
+        }
+        h1 {
+            font-family: Desdemona, Arial, Verdana serif; /* Гарнитура текста */
+            font-size: 50pt; /* Размер шрифта  */
+            color: #2F4F4F;
+            text-align:  center;
+            text-shadow: grey 2px 3px 4px;
+            line-height:0.5;
+        }
+        p {
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            font-size: 11pt; /* Размер шрифта в пунктах */
+        }
+        table {
+            width: 25%; /* Ширина таблицы */
+            background: white; /* Цвет фона таблицы */
+            color: black; /* Цвет текста */
+            border: #000000;
+            border-spacing: 1px; /* Расстояние между ячейками */
+            border-collapse: collapse; /* Убираем двойные границы между ячейками */
+        }
+        th {
+            background: #C0C0C0;
+        }
+        td, th{
+            border-bottom: 1px solid black;
+        }
+        form {
+            position: absolute;
+            border: 4px solid #DCDCDC;
+            border-radius: 8px;
+            background: #DCDCDC;
+            width: 256px;
+            left: 80%;
+            top: 33%;
+        }
+        div.even{
+            font-size: 14pt;
+            font-weight:bold;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>BMW X6</h1>
+    <p>Новый автомобиль BMW X6 (F16) 2016 сохранил характерные черты стиля своих «предшественников»,
+    став еще более совершенным с точки зрения динамики и технологичности.
+    Он построен на базе инновационной облегченной конструкции, созданной с использованием сверхлегких материалов:
+    магния при креплении приборной панели, текстиля – в контракции защиты дна,
+    алюминия – в конструкции подвески и капота. Новинка оснащена системой Eco PRO,
+    позволяющей снизить расходы топлива в среднем на 20 – 25 %!</p>
+    <br>
+    <table>
+        <tbody>
+          <tr>
+              <th>Тип двигателя</th><td>TwinPower Turbo</td>
+          </tr>
+          <tr>
+              <th>Объем двигателя</th><td>2993 куб.см</td>
+          </tr>
+          <tr>
+              <th>Максимальная скорость</th><td>250 км/ч</td>
+          </tr>
+          <tr>
+              <th>Крутящий момент</th><td>740/2000Нм/об мин</td>
+          </tr>
+          <tr>
+              <th>Объем багажника</th><td>550л</td>
+          </tr>
+          <tr>
+              <th>Масса автомобиля</th><td>2185кг</td>
+          </tr>
+          <tr>
+              <th>Максимальная снаряженная масса автомобиля</th><td>2900кг</td>
+          </tr>
+          <tr>
+              <th>Тип привода</th><td>постоянный на все колеса</td>
+          </tr>
+        </tbody>
+    </table>
+    <form action="mailto:lobanova_venera@mail.ru" method="post" enctype="text/plain">
+        <div class="even">Заказать автомобиль</div>
+        <label>
+            <div>Комплектация автомобиля</div>
+            <input name="equipment" size="20" maxlength="30" placeholder="Комплектация автомобиля" type="text">
+        </label>
+        <p>Небходимость тест-драйва:</p>
+        <div><input name="exercise" value="yes" type="radio" id="radio1"><label for="radio1">Да</label></div>
+        <div><input name="exercise" value="no" type="radio" id="radio2"><label for="radio2">Нет</label></div>
+        <label>
+            <div>Цвет:</div>
+            <select size="1" name="years[]">
+                <option disabled="disabled">Цвет</option>
+                <option value="black">Черный</option>
+                <option value="white">Белый</option>
+                <option value="gray">Серый</option>
+                <option value="darkgrey">Темно-серый</option>
+            </select>
+        </label>
+        <label>
+            <div>ФИО:</div>
+            <input name="user_name" size="20" maxlength="30" placeholder="фио" type="text">
+        </label>
+        <label>
+            <div>Номер телефона:</div>
+            <input name="phone_number" size="20" maxlength="30" placeholder="Номер телефона" type="text">
+        </label>
+        <label>
+            <div>Комментарии к заказу:</div>
+            <textarea name="comment" cols="20" rows="2" placeholder="Комментарии к заказу">
+            </textarea>
+        </label>
+        <div>
+            <input value="Отправить" type="submit">
+        </div>
+    </form>
+  </body>
+</html>

@@ -8,11 +8,14 @@
     <h1>Анкета участника эстаеты</h1>
     <h2>Личная информация</h2>
     <form action="mailto:lobanova_venera@mail.ru" method="post" enctype="text/plain">
-      <div><label>ФИО:
-          <input name="user_name" size="20" maxlength="30" placeholder="фио" type="text"></label></div>
-      Возраст:
-      <div>
-        <label>
+      <label>
+        <div>ФИО:</div>
+        <div>
+            <input name="user_name" size="20" maxlength="30" placeholder="фио" type="text">
+        </div>
+      </label>
+      <label>
+        <div>Возраст:</div>
           <select size="1" name="years[]">
             <option disabled="disabled">до 18</option>
             <option value="12">12</option>
@@ -22,13 +25,14 @@
             <option value="16">16</option>
             <option value="17">17</option>
           </select>
-        </label>
-      </div>
-      <div>
-        <label>Адрес:
-          <input name="address" size="20" maxlength="50" placeholder="Введите адрес" type="text"></label></div>
+      </label>
+      <label>
+        <div>Адрес:</div>
+          <input name="address" size="20" maxlength="50" placeholder="Введите адрес" type="text">
+      </label>
+
       <p>Дополнительная информация</p>
-      <p>Занмаетесь ли вы спортом</p>
+      <p>Занимаетесь ли вы спортом</p>
       <div><input name="exercise" value="yes" type="radio" id="radio1"><label for="radio1">Да</label></div>
       <div><input name="exercise" value="no" type="radio" id="radio2"><label for="radio2">Нет</label></div>
       <p>Какой вид спорта вы предпочитаете:</p>
