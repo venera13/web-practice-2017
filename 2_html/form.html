@@ -8,14 +8,17 @@
     <h1>Анкета участника эстаеты</h1>
     <h2>Личная информация</h2>
     <form action="mailto:lobanova_venera@mail.ru" method="post" enctype="text/plain">
-      <label>
-        <div>ФИО:</div>
-        <div>
+      <div>
+        <label>
+          <span>ФИО:</span>
+          <span>
             <input name="user_name" size="20" maxlength="30" placeholder="фио" type="text">
-        </div>
-      </label>
-      <label>
-        <div>Возраст:</div>
+          </span>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Возраст:</span>
           <select size="1" name="years[]">
             <option disabled="disabled">до 18</option>
             <option value="12">12</option>
@@ -25,30 +28,55 @@
             <option value="16">16</option>
             <option value="17">17</option>
           </select>
-      </label>
-      <label>
-        <div>Адрес:</div>
+        </label>
+      </div>
+      <div>
+        <label>
+          <span>Адрес:</span>
           <input name="address" size="20" maxlength="50" placeholder="Введите адрес" type="text">
-      </label>
-
+        </label>
+      </div>
       <p>Дополнительная информация</p>
       <p>Занимаетесь ли вы спортом</p>
-      <div><input name="exercise" value="yes" type="radio" id="radio1"><label for="radio1">Да</label></div>
-      <div><input name="exercise" value="no" type="radio" id="radio2"><label for="radio2">Нет</label></div>
+      <div>
+        <input name="exercise" value="yes" type="radio" id="radio1">
+        <label for="radio1">Да</label>
+      </div>
+      <div>
+        <input name="exercise" value="no" type="radio" id="radio2">
+        <label for="radio2">Нет</label>
+      </div>
       <p>Какой вид спорта вы предпочитаете:</p>
-      <div><input name="football" value="football" type="checkbox" id="check1"><label for="check1">Футбол</label></div>
-      <div><input name="voleyball" value="voleyball" type="checkbox" id="check2"><label for="check2">Волейбол</label></div>
-      <div><input name="swimming" value="swimming" type="checkbox" id="check3"><label for="check3">Плавание</label></div>
-      <div><input name="running" value="running" type="checkbox" id="check4"><label for="check4">Бег</label></div>
-      <div><input name="powerlifting" value="powerlifting" type="checkbox" id="check5"><label for="check5">Пауэрлифтинг</label></div>
-      <div><input name="acrobatics" value="acrobatics" type="checkbox" id="check6"><label for="check6">Акробатика</label></div>
-      <p>О себе:
+      <div>
+        <input name="sport" value="football" type="checkbox" id="check1">
+        <label for="check1">Футбол</label>
+      </div>
+      <div>
+        <input name="sport" value="voleyball" type="checkbox" id="check2">
+        <label for="check2">Волейбол</label>
+      </div>
+      <div><input name="sport" value="swimming" type="checkbox" id="check3">
+        <label for="check3">Плавание</label>
+      </div>
+      <div>
+        <input name="sport" value="running" type="checkbox" id="check4">
+        <label for="check4">Бег</label>
+      </div>
+      <div>
+        <input name="sport" value="powerlifting" type="checkbox" id="check5">
+        <label for="check5">Пауэрлифтинг</label>
+      </div>
+      <div>
+        <input name="sport" value="acrobatics" type="checkbox" id="check6">
+        <label for="check6">Акробатика</label>
+      </div>
+      <div>О себе:
         <textarea name="about_me" cols="20" rows="2" placeholder="Введите информацию о себе">
         </textarea>
-      </p>
-      <p>
+      </div>
+      <div>
         <input value="Отправить" type="submit">
-      </p>
+      </div>
     </form>
   </body>
 </html>
