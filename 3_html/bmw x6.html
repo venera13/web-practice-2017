@@ -1,223 +1,231 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    <meta charset="utf-8">
     <title>BMW X6</title>
-      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>BMW X6</h1>
-    <p>
+    <div class="main_container">
+      <h1>BMW X6</h1>
+      <p>
         Новый автомобиль BMW X6 (F16) 2016 сохранил характерные черты стиля своих «предшественников»,
         став еще более совершенным с точки зрения динамики и технологичности.
         Он построен на базе инновационной облегченной конструкции, созданной с использованием сверхлегких материалов:
         магния при креплении приборной панели, текстиля – в контракции защиты дна,
         алюминия – в конструкции подвески и капота. Новинка оснащена системой Eco PRO,
         позволяющей снизить расходы топлива в среднем на 20 – 25 %!
-    </p>
-    <table>
+      </p>
+      <table>
         <tbody>
           <tr>
-              <th>Тип двигателя</th>
-              <td>TwinPower Turbo</td>
+            <th>Тип двигателя</th>
+            <td>TwinPower Turbo</td>
           </tr>
           <tr>
-              <th>Объем двигателя</th>
-              <td>2993 куб.см</td>
+            <th>Объем двигателя</th>
+            <td>2993 куб.см</td>
           </tr>
           <tr>
-              <th>Максимальная скорость</th>
-              <td>250 км/ч</td>
+            <th>Максимальная скорость</th>
+            <td>250 км/ч</td>
           </tr>
           <tr>
-              <th>Крутящий момент</th>
-              <td>740/2000Нм/об мин</td>
+            <th>Крутящий момент</th>
+            <td>740/2000Нм/об мин</td>
           </tr>
           <tr>
-              <th>Объем багажника</th>
-              <td>550л</td>
+            <th>Объем багажника</th>
+            <td>550л</td>
           </tr>
           <tr>
-              <th>Масса автомобиля</th>
-              <td>2185кг</td>
+            <th>Масса автомобиля</th>
+            <td>2185кг</td>
           </tr>
           <tr>
-              <th>Максимальная снаряженная масса автомобиля</th>
-              <td>2900кг</td>
+            <th>Максимальная снаряженная масса автомобиля</th>
+            <td>2900кг</td>
           </tr>
           <tr>
-              <th>Тип привода</th>
-              <td>постоянный на все колеса</td>
+            <th>Тип привода</th>
+            <td>постоянный на все колеса</td>
           </tr>
         </tbody>
-    </table>
-    <form action="mailto:lobanova_venera@mail.ru" method="post" enctype="text/plain">
-        <legend>Заказать атомобиль</legend>
-        <div>Комплектация автомобиля</div>
-        <input name="equipment" size="20" maxlength="30" placeholder="Комплектация автомобиля" type="text">
-        <p>Небходимость тест-драйва:</p>
+      </table>
+      <form action="mailto:lobanova_venera@mail.ru" method="post" enctype="text/plain">
+        <p class="legend">Заказать атомобиль</p>
         <div>
-            <input name="exercise" value="yes" type="radio" id="radio1">
-            <label for="radio1">Да</label>
+          <p>Комплектация автомобиля</p>
+          <input name="assembly" size="20" maxlength="30" placeholder="Комплектация автомобиля" type="text">
         </div>
         <div>
-            <input name="exercise" value="no" type="radio" id="radio2">
-            <label for="radio2">Нет</label>
+          <p>Небходимость тест-драйва:</p>
+          <input name="exercise" value="yes" type="radio" id="radio1">
+          <label for="radio1">Да</label>
+          <input name="exercise" value="no" type="radio" id="radio2">
+          <label for="radio2">Нет</label>
         </div>
-        <div>Цвет:</div>
-        <label>
+        <div>
+          <p>Цвет:</p>
+          <label>
             <select size="1" name="years[]">
-                <option value="black">Черный</option>
-                <option value="white">Белый</option>
-                <option value="gray">Серый</option>
-                <option value="darkgrey">Темно-серый</option>
+              <option value="black">Черный</option>
+              <option value="white">Белый</option>
+              <option value="gray">Серый</option>
+              <option value="darkgray">Темно-серый</option>
             </select>
-        </label>
-        <div>ФИО:</div>
-        <input name="user_name" size="20" maxlength="30" placeholder="фио" type="text">
-        <div>Номер телефона:</div>
-        <input name="phone_number" size="20" maxlength="30" placeholder="Номер телефона" type="text">
-        <div>Комментарии к заказу:</div>
-        <textarea name="comment" cols="20" rows="2" placeholder="Комментарии к заказу">
-        </textarea>
-        <div>
-            <input value="Отправить" type="submit">
+          </label>
         </div>
-    </form>
-    <div style="clear: left"></div>
-    <table class="two">
+        <div>
+          <p>ФИО:</p>
+          <input name="user_name" size="20" maxlength="30" placeholder="фио" type="text">
+        </div>
+        <div>
+          <p>Номер телефона:</p>
+          <input name="phone_number" size="20" maxlength="30" placeholder="Номер телефона" type="text">
+        </div>
+        <div>
+          <p>Комментарии к заказу:</p>
+          <textarea name="comment" cols="20" rows="2" placeholder="Комментарии к заказу"></textarea>
+        </div>
+        <div>
+          <input value="Отправить" type="submit">
+        </div>
+      </form>
+      <table class="assembly">
         <tbody>
           <tr>
-              <th>Комплектация</th>
-              <th>Двигатель</th>
-              <th>Коробка</th>
-              <th>Привод</th>
-              <th>Разгон</th>
-              <th>Скорость</th>
-              <th>Расход</th>
-              <th>Цена</th>
+            <th>Комплектация</th>
+            <th>Двигатель</th>
+            <th>Коробка</th>
+            <th>Привод</th>
+            <th>Разгон</th>
+            <th>Скорость</th>
+            <th>Расход</th>
+            <th>Цена</th>
           </tr>
           <tr>
             <td>xDrive35i</td>
-              <td>бензин 3.0 л.|306 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.4</td>
-              <td>240 км/ч</td>
-              <td>11.4|7.6|8.6</td>
-              <td>4 770 000 руб.</td>
+            <td>бензин 3.0 л.|306 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.4</td>
+            <td>240 км/ч</td>
+            <td>11.4|7.6|8.6</td>
+            <td>4 770 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive35i Prestige</td>
-              <td>бензин 3.0 л.|306 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.4</td>
-              <td>240 км/ч</td>
-              <td>11.4|7.6|8.6</td>
-              <td>4 920 000 руб.</td>
+            <td>xDrive35i Prestige</td>
+            <td>бензин 3.0 л.|306 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.4</td>
+            <td>240 км/ч</td>
+            <td>11.4|7.6|8.6</td>
+            <td>4 920 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive35i Luxury</td>
-              <td>бензин 3.0 л.|306 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.4</td>
-              <td>240 км/ч</td>
-              <td>11.4|7.6|8.6</td>
-              <td>5 130 000 руб.</td>
+            <td>xDrive35i Luxury</td>
+            <td>бензин 3.0 л.|306 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.4</td>
+            <td>240 км/ч</td>
+            <td>11.4|7.6|8.6</td>
+            <td>5 130 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive30d</td>
-              <td>дизель 3.0 л.|249 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.7</td>
-              <td>230 км/ч</td>
-              <td>6.7|5.5|6.0</td>
-              <td>4 800 000 руб.</td>
+            <td>xDrive30d</td>
+            <td>дизель 3.0 л.|249 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.7</td>
+            <td>230 км/ч</td>
+            <td>6.7|5.5|6.0</td>
+            <td>4 800 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive30d Prestige</td>
-              <td>дизель 3.0 л.|249 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.7</td>
-              <td>230 км/ч</td>
-              <td>6.7|5.5|6.0</td>
-              <td>5 030 000 руб.</td>
+            <td>xDrive30d Prestige</td>
+            <td>дизель 3.0 л.|249 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.7</td>
+            <td>230 км/ч</td>
+            <td>6.7|5.5|6.0</td>
+            <td>5 030 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive30d Luxury</td>
-              <td>дизель 3.0 л.|249 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.7</td>
-              <td>230 км/ч</td>
-              <td>6.7|5.5|6.0</td>
-              <td>5 270 000 руб.</td>
+            <td>xDrive30d Luxury</td>
+            <td>дизель 3.0 л.|249 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.7</td>
+            <td>230 км/ч</td>
+            <td>6.7|5.5|6.0</td>
+            <td>5 270 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive30d M Sport</td>
-              <td>дизель 3.0 л.|249 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.7</td>
-              <td>230 км/ч</td>
-              <td>6.7|5.5|6.0</td>
-              <td>5 290 000 руб.</td>
+            <td>xDrive30d M Sport</td>
+            <td>дизель 3.0 л.|249 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.7</td>
+            <td>230 км/ч</td>
+            <td>6.7|5.5|6.0</td>
+            <td>5 290 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive30d Pure Extravagance</td>
-              <td>дизель 3.0 л.|249 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>6.7</td>
-              <td>230 км/ч</td>
-              <td>6.7|5.5|6.0</td>
-              <td>5 540 000 руб.</td>
+            <td>xDrive30d Pure Extravagance</td>
+            <td>дизель 3.0 л.|249 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>6.7</td>
+            <td>230 км/ч</td>
+            <td>6.7|5.5|6.0</td>
+            <td>5 540 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive40d</td>
-              <td>дизель 3.0 л.|313 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>5.8</td>
-              <td>240 км/ч</td>
-              <td>7.1|5.8|6.3</td>
-              <td>5 020 000 руб.</td>
+            <td>xDrive40d</td>
+            <td>дизель 3.0 л.|313 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>5.8</td>
+            <td>240 км/ч</td>
+            <td>7.1|5.8|6.3</td>
+            <td>5 020 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive40d M Sport</td>
-              <td>дизель 3.0 л.|313 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>5.8</td>
-              <td>240 км/ч</td>
-              <td>7.1|5.8|6.3</td>
-              <td>5 700 000 руб.</td>
+            <td>xDrive40d M Sport</td>
+            <td>дизель 3.0 л.|313 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>5.8</td>
+            <td>240 км/ч</td>
+            <td>7.1|5.8|6.3</td>
+            <td>5 700 000 руб.</td>
           </tr>
           <tr>
-              <td>xDrive50i</td>
-              <td>бензин 3.0 л.|450 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>4.8</td>
-              <td>250 км/ч</td>
-              <td>13.0|7.7|97</td>
-              <td>5 520 000 руб.</td>
+            <td>xDrive50i</td>
+            <td>бензин 3.0 л.|450 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>4.8</td>
+            <td>250 км/ч</td>
+            <td>13.0|7.7|97</td>
+            <td>5 520 000 руб.</td>
           </tr>
           <tr>
-              <td>M50d</td>
-              <td>дизель 3.0 л.|381 л.с.</td>
-              <td>АТ</td>
-              <td>4&#xD7;4 Полный</td>
-              <td>5.2</td>
-              <td>250 км/ч</td>
-              <td>7.2|6.3|6.6</td>
-              <td>5 850 000 руб.</td>
+            <td>M50d</td>
+            <td>дизель 3.0 л.|381 л.с.</td>
+            <td>АТ</td>
+            <td>4&#xD7;4 Полный</td>
+            <td>5.2</td>
+            <td>250 км/ч</td>
+            <td>7.2|6.3|6.6</td>
+            <td>5 850 000 руб.</td>
           </tr>
         </tbody>
-    </table>
+      </table>
+    </div>
   </body>
 </html>
