@@ -1,0 +1,120 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.main_container
+{
+    margin: 50px auto;
+    width: 1000px;
+}
+
+body
+{
+    background: white;
+    color: black; /* Цвет текста */
+}
+
+img.photo
+{
+    width: 225px;
+}
+
+img.movie
+{
+    width: 200px;
+}
+
+h1
+{
+    font-family: Kurale, Arial, Verdana, sans-serif; /* Гарнитура текста */
+    font-size: 25px; /* Размер шрифта  */
+    color: #000000;
+    text-align: left;
+    text-shadow: grey 2px 3px 4px;
+    line-height: 15px;
+}
+
+h2
+{
+    font-family: Oswald, Arial, Verdana, sans-serif;
+    font-size: 20px; /* Размер шрифта  */
+    color: #000000;
+    text-align: left;
+    margin-left: 120px;
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; /* Размер шрифта в пунктах */
+}
+p.blockquote
+{
+    text-align: center;
+    font-size: 28px;
+    background: #E6E6FA;
+}
+
+table
+{
+    color: black; /* Цвет текста */
+    border: #000000;
+    border-spacing: 1px; /* Расстояние между ячейками */
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    text-align: left;
+    margin-right: 70px;
+    margin-left: 30px;
+}
+
+.float_right
+{
+    float: right;
+}
+
+ul, ol
+{
+  font-size: 18px;
+}
+
+td, th
+{
+    border-bottom: 1px solid black;
+}
+
+div.title_conteiner
+{
+    margin-bottom: 300px;
+    margin-left: 50px;
+}
+
+div.blockquote_conteiner
+{
+    margin: 100px 100px;
+}
+
+div.list_conteiner
+{
+    margin-bottom: 70px;
+}
+
+div.movie_conteiner
+{
+    margin-bottom: 70px;
+}
+
+div.background_container
+{
+    background-color: rgba(173, 216, 230, 0.2);
+}
+
+#footer
+{
+    margin: 0 auto;
+    padding: 10px; /* Поля вокруг текста */
+    background: #191970; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
