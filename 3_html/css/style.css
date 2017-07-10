@@ -7,31 +7,34 @@ html, body
 
 .main_container
 {
-    margin: 50px auto;
+    margin: auto;
     width: 1000px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px #808080;
 }
 
 body
 {
-    background: black url(../image/bmw-x6.jpg) no-repeat;
-    color: black; /* Цвет текста */
+    background: #edeef0;
+    color: black;
 }
 
 h1
 {
-    font-family: Arial, Verdana, sans-serif; /* Гарнитура текста */
-    font-size: 70px; /* Размер шрифта  */
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 60px;
     color: #000000;
     text-align: left;
     text-shadow: grey 2px 3px 4px;
-    line-height: 70px;
+    line-height: 60px;
     margin-left: 120px;
 }
 
 h2
 {
     font-family: Oswald, Arial, Verdana, sans-serif;
-    font-size: 45px; /* Размер шрифта  */
+    font-size: 35px;
     color: #2F4F4F;
     text-align: left;
     margin-left: 120px;
@@ -40,43 +43,46 @@ h2
 h3
 {
     font-family: Oswald, Arial, Verdana, sans-serif;
-    font-size: 50px; /* Размер шрифта  */
+    font-size: 45px;
     color: black;
     text-shadow: grey 2px 3px 4px;
     text-align: left;
-    margin-left: 100px;
+    width: 700px;
+    margin-left: 20px;
 }
 
 p
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px; /* Размер шрифта в пунктах */
+    font-size: 16px;
+    width: 630px;
 }
 
-p.legend
+.legend
 {
     font-size: 14px;
     font-weight: bold;
 }
 
-p.description
+.description
 {
     margin-left: 20px;
 }
+
 table
 {
-    width: 25%; /* Ширина таблицы */
+    width: 25%;
     background-color: rgba(255, 255, 255, 0.2);
-    color: black; /* Цвет текста */
+    color: black;
     border: #000000;
-    border-spacing: 1px; /* Расстояние между ячейками */
-    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    border-spacing: 1px;
+    border-collapse: collapse;
     text-align: left;
     margin-right: 70px;
     margin-left: 30px;
 }
 
-table.assembly
+.assembly
 {
     position: relative;
     margin: 0 auto;
@@ -89,9 +95,14 @@ table.assembly
     float: left;
 }
 
+.clear_left
+{
+    clear: both;
+}
+
 th
 {
-    background-color: rgba(255, 255, 255, 0.3);
+    background: #f0efee;
 }
 
 td, th
@@ -99,31 +110,45 @@ td, th
     border-bottom: 1px solid black;
 }
 
+.assembly_cell
+{
+    padding: 5px 10px;
+}
+
 form
 {
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    background: linear-gradient(to top left, #d6d5d0, #ffffff);
     width: 256px;
     float: right;
-    margin-right: 50px;
+    margin-right: 30px;
+    padding: 5px;
 }
 
-.container_background
+.line
 {
-    background-color: rgba(255, 255, 255, 0.4);
+    background: #f9f9f9;
 }
 
-div.table_container
+.form_block
+{
+    margin-bottom: 10px;
+}
+
+.table_container
 {
     margin-bottom: 230px;
 }
 
-div.form_container
+.form_container
 {
     margin-bottom: 300px;
 }
 
-div.title_container
-  {
-      margin-bottom: 550px;
-  }
+.title_container
+{
+    background: black url(../image/bmw-x6.jpg) no-repeat;
+    background-size: 1000px auto;
+    margin-bottom: 25px;
+    height: 400px;
+}
