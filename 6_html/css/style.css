@@ -9,20 +9,23 @@ html, body
 {
     margin: 50px auto;
     width: 1000px;
+    background: white;
+    padding: 20px;
 }
 
 body
 {
     background: white;
-    color: black; /* Цвет текста */
+    color: black;
 }
 
-img.photo
+.photo
 {
     width: 225px;
+    margin-left: 50px;
 }
 
-img.movie
+.movie
 {
     width: 200px;
     text-align: center;
@@ -30,44 +33,77 @@ img.movie
 
 h1
 {
-    font-family: Kurale, Arial, Verdana, sans-serif; /* Гарнитура текста */
-    font-size: 25px; /* Размер шрифта  */
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 25px;
     color: #000000;
     text-align: left;
     text-shadow: gray 2px 3px 4px;
-    line-height: 15px;
+    margin-right: 550px;
+    color: #0c0c4b;
 }
 
 h2
 {
-    font-family: Oswald, Arial, Verdana, sans-serif;
-    font-size: 20px; /* Размер шрифта  */
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 20px;
     color: #000000;
-    text-align: left;
-    margin-left: 120px;
+    margin-right: 140px;
+    margin-bottom: 50px;
+    color: #0c0c4b;
+}
+
+.h2_hobby
+{
+    margin-bottom: 70px;
+    margin-right: 80px;
+}
+
+.h2_movie
+{
+    padding: 5px 100px;
 }
 
 p
 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px; /* Размер шрифта в пунктах */
+    font-size: 15px;
 }
-p.blockquote
+
+.blockquote_conteiner
 {
+    margin: 60px auto;
+    width: 860px;
     text-align: center;
-    font-size: 28px;
-    background: #ADD8E6;
+}
+
+.blockquote
+{
+    font-size: 24px;
+    background: #f1f1f1;
+    box-shadow: 0 0 10px #c5b7b7;
+    width: 700px;
+    margin: 5px auto;
+}
+
+.h1_title_text
+{
+    width: 650px;
+}
+
+.h2_title_text
+{
+    width: 860px;
+    margin: 0 auto;
 }
 
 table
 {
-    color: black; /* Цвет текста */
+    color: black;
     border: #000000;
-    border-spacing: 1px; /* Расстояние между ячейками */
-    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    border-spacing: 1px;
+    border-collapse: collapse;
     text-align: left;
-    margin-right: 70px;
-    margin-left: 30px;
+    margin: 0 auto;
 }
 
 .float_right
@@ -75,9 +111,32 @@ table
     float: right;
 }
 
-ul, ol
+.clear_both
 {
-  font-size: 18px;
+    clear: both;
+}
+
+ol
+{
+    font-size: 18px;
+    padding: 5px 50px;
+}
+
+ul
+{
+    font-size: 18px;
+    padding: 5px 180px;
+    margin-right: 300px;
+}
+
+li
+{
+    color: #b3150e;
+}
+
+li span
+{
+    color: #0c0c4b;
 }
 
 th
@@ -85,43 +144,39 @@ th
     text-align: center;
 }
 
-td.image
+.image
 {
     text-align: center;
 }
 
-div.title_conteiner
+.title_conteiner
 {
     margin-bottom: 300px;
     margin-left: 50px;
 }
 
-div.blockquote_conteiner
+.list_conteiner
 {
-    margin: 100px 100px;
+    margin: 70px auto;
 }
 
-div.list_conteiner
+.movie_conteiner
 {
     margin-bottom: 70px;
-    margin-right: 100px;
+    background: #f7f5fd;
 }
 
-div.movie_conteiner
+.footer
 {
-    margin-bottom: 70px;
-}
-
-div.background_container
-{
-    background-color: rgba(173, 216, 230, 0.2);
+    width: 1000px;
+    table-layout: fixed;
 }
 
 #footer
 {
     margin: 0 auto;
-    padding: 10px; /* Поля вокруг текста */
-    background: #191970; /* Цвет фона */
-    color: #fff; /* Цвет текста */
-    width: 100%; /* Ширина слоя */
+    padding: 10px;
+    background: #bfbfdc;
+    color: #000000;
+
 }
