@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body
+{
+    background: white;
+}
+
+h1
+{
+    font-family: "Roboto", tahoma, arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-right: 550px;
+    color: #3d464a;
+    font-weight: 500;
+}
+
+h2
+{
+    font-family: "Roboto", tahoma, arial, sans-serif;
+    font-size: 26px;
+    margin-bottom: 50px;
+    color: #3d464a;
+}
+
+h4
+{
+    font-family: "Open Sans", sans-serif, tahoma;
+    font-size: 18px;
+    color: #3d464a;
+}
+
+p
+{
+    font-family: "Open Sans", sans-serif, tahoma;
+    font-size: 15px;
+    line-height: 28px;
+    color: #3d464a;
+}
+
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.main_container
+{
+    margin: 0 auto;
+    background: white;
+    width: 100%;
+}
+
+.list_container h2
+{
+    margin-bottom: 70px;
+    margin-right: 60px;
+    margin-left: 40px;
+}
+
+.blockquote_container
+{
+    margin: 120px auto;
+    text-align: center;
+    background: #f5f5f5;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.blockquote
+{
+    font: 36px "Roboto", tahoma, arial;
+    margin: 30px auto;
+    font-weight: 400;
+    color: #19a9e5;
+    width: 800px;
+}
+
+.title_container
+{
+    margin: 50px auto;
+    width: 1000px;
+}
+
+.study_container
+{
+    margin: 70px auto;
+    width: 1000px;
+}
+
+.study_container h2
+{
+    text-align: center;
+}
+
+.study_block
+{
+    margin: 50px 140px;
+}
+
+.study_block  p:first-letter
+{
+    color: #19a9e5;
+    font-size: 20px;
+}
+
+.study
+{
+    width: 350px;
+    text-align: center;
+    border-left: 1px solid #e5e5ea;
+    border-top: 1px solid #e5e5ea;
+    border-bottom: 1px solid #e5e5ea;
+    margin-bottom: 50px;
+}
+
+.study.right
+{
+    border-right: 1px solid #e5e5ea;
+
+}
+
+.movie_container
+{
+    margin: 70px auto;
+    width: 1100px;
+}
+
+.movie_container h2
+{
+    text-align: center;
+}
+
+.movie_block
+{
+    width: 24%;
+    padding: 3px;
+    margin-bottom: 50px;
+}
+
+.photo
+{
+    width: 225px;
+    margin-left: 50px;
+}
+
+.movie
+{
+    width: 210px;
+    text-align: center;
+}
+
+.h4_illusion
+{
+    margin-bottom: 54px;
+}
+
+.h4_home
+{
+    margin-bottom: 20px;
+}
+
+.h4_lend
+{
+    margin-bottom: 21px;
+}
+
+.h4_raindow
+{
+    margin-bottom: 46px;
+}
+
+.author
+{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-indent: -19px;
+    opacity: 0.8;
+}
+
+.h1_title_text
+{
+    width: 650px;
+}
+
+.h2_title_text
+{
+    width: 950px;
+    margin: 0 auto;
+}
+
+.hobby_container
+{
+    margin: 50px auto;
+}
+
+.hobby_block
+{
+    margin: 20px auto;
+    background: #f5f5f5;
+    text-align: center;
+    padding: 50px 600px;
+}
+
+.hobby_block p
+{
+    font-weight: 600;
+    line-height: 1;
+}
+
+li
+{
+    color: #19a9e5;
+}
+
+.float_right
+{
+    float: right;
+}
+
+.float_left
+{
+    float: left;
+}
+
+.clear_both
+{
+    clear: both;
+}
+
+.image
+{
+    text-align: center;
+}
+
+.footer_container
+{
+    margin-top: 200px;
+    padding: 20px 180px;
+    background: #bdc1c7;
+    color: #181a1d;
+}
+
+.footer_block
+{
+    padding: 0 100px;
+}
+
+@media screen and (min-width:200px) and (max-width:1024px)
+{
+    p
+    {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .main_container
+    {
+        width: 100%;
+        margin: 1%;
+        max-width: 1000px;
+    }
+
+    .title_container
+    {
+        width: 95%;
+        padding: 0 2%;
+        margin: 0 2%;
+    }
+
+    .photo
+    {
+
+        margin: 0 auto;
+    }
+
+    .h1_title_text, .h2_title_text
+    {
+        width: 90%;
+        float: none;
+    }
+
+    .float_right
+    {
+        float: none;
+    }
+
+    .float_left
+    {
+        float: none;
+    }
+
+    .blockquote_container
+    {
+        margin: 30px auto;
+    }
+
+    .blockquote
+    {
+        width: 95%;
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    .study_container
+    {
+        width: 95%;
+    }
+
+    .study_block
+    {
+        margin: 50px auto;
+    }
+
+    .study
+    {
+        width: 75%;
+        margin: 0 auto;
+        border-right: 1px solid #e5e5ea;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_container h4
+    {
+        margin: 15px auto;
+    }
+
+    .movie_block
+    {
+        width: 95%;
+        margin-bottom: 10px;
+    }
+
+    .hobby_container
+    {
+        width: 95%;
+    }
+
+    .hobby_block
+    {
+        width: 95%;
+        padding: 0;
+        text-align: left;
+    }
+
+    .hobby_block h2
+    {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .footer_container
+    {
+        margin-top: 70px;
+    }
+
+    .footer_block
+    {
+        padding: 0;
+        width: 90%;
+        text-align: left;
+    }
+}

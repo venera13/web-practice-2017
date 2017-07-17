@@ -1,0 +1,470 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body
+{
+    background: white;
+}
+
+h1
+{
+    font-size: 60px;
+    color: #fff;
+    line-height: 1;
+}
+
+h2
+{
+    font-size: 30px;
+}
+
+h3
+{
+    font-size: 15px;
+}
+
+h4
+{
+    color: #000;
+}
+
+p
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    color: #506a85;
+}
+
+button
+{
+    background: #00bc9c;
+    color: white;
+    border: 0;
+    padding: 15px 40px;
+    margin: 20px 0;
+}
+
+input
+{
+    width: 200px;
+    padding: 7px;
+    opacity: 0.8;
+    outline: none;
+}
+
+.float_left
+{
+    float: left;
+}
+
+.clear_both
+{
+    clear: both;
+}
+
+.main_container
+{
+    margin: 0 auto;
+    background: white;
+    width: 100%;
+    color: #506a85;
+}
+
+.header
+{
+    background: #f5f7fa;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header_block
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header_block_left
+{
+    margin: 0 20px;
+}
+
+.menu_container
+{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.menu_item
+{
+    margin: 15px;
+    font-weight: 700;
+}
+
+.title_container
+{
+    background: #3f3c67;
+    background-size: 1000px auto;
+    height: 370px;
+    background-origin: border-box;
+    padding: 120px 0;
+    margin-bottom: 100px;
+}
+
+.title_block
+{
+    margin: 0 auto;
+    width: 850px;
+    text-align: center;
+}
+
+.h1_text
+{
+    font-size: 20px;
+    color: #a3b1bf;
+}
+
+.feature_container, .conclusion_container
+{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature_block
+{
+    width: 550px;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.feature_separate_block
+{
+    width: 850px;
+    margin: 0 auto;
+}
+
+.feature_separate_block p
+{
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.feature_passion_block
+{
+    width: 260px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.feature_creativity_block
+{
+    width: 260px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+
+.feature_quality_block
+{
+    width: 260px;
+    margin-bottom: 30px;
+}
+
+.works_container
+{
+    background: #f2f5f7;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 650px;
+}
+
+.works_blocks
+{
+    width: 850px;
+    margin: 0 auto;
+}
+
+.works_left_block, .works_right_block
+{
+    background: white;
+    width: 370px;
+    margin: 40px 15px;
+}
+
+.works_container img
+{
+    height: 270px;
+    width: 370px;
+}
+
+.works_block
+{
+    width: 190px;
+    margin: 0 4px;
+}
+
+.works_block img
+{
+    height: 110px;
+    width: 165px;
+}
+
+.conclusion_container
+{
+    margin: 60px auto;
+    text-align: center;
+    width: 550px;
+}
+
+.menu_bottom_container
+{
+    width: 100%;
+    background: #2f4052;
+    color: #ffffff;
+}
+
+.menu_bottom_block
+{
+    width: 850px;
+    margin: 0 auto;
+}
+
+.menu_bottom_feature_block
+{
+    width: 200px;
+    margin: 5px;
+}
+
+.menu_bottom_works_block
+{
+    width: 200px;
+    margin: 5px;
+}
+
+.menu_bottom_communication_block
+{
+    width: 200px;
+    margin: 5px;
+}
+
+.menu_bottom_updates_block
+{
+    width: 200px;
+    margin: 5px;
+}
+
+.menu_bottom_block p
+{
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.menu_bottom_updates_block button
+{
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.menu_works_block
+{
+    width: 100px;
+}
+
+.menu_works_block img
+{
+    width: 90px;
+}
+
+.footer
+{
+    background: #283645;
+}
+
+.footer_block
+{
+    width: 850px;
+    margin: 0 auto;
+}
+
+.footer_left_block
+{
+    margin-left: 10px;
+    margin-right: 180px;
+}
+
+.footer_block p
+{
+    padding: 0 5px;
+}
+
+@media screen and (min-width:200px) and (max-width:1024px)
+{
+    button
+    {
+        padding: 20px 40px;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .main_container
+    {
+        width: 100%;
+        margin: 1%;
+        max-width: 1000px;
+    }
+
+    .header_block p
+    {
+        font-size: 38px;
+    }
+
+    .header_block_left
+    {
+        margin-right: 45px;
+    }
+
+    .menu_container
+    {
+        width: 90%;
+    }
+
+    .menu_container p
+    {
+        font-size: 20px;
+    }
+
+    .title_container
+    {
+        padding: 100px 0;
+    }
+
+    .title_container p
+    {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .feature_block
+    {
+        width: 90%;
+        text-align: center;
+        margin: 5% auto;
+    }
+
+    .feature_separate_block
+    {
+        margin: 0 auto;
+    }
+
+    .feature_passion_block, .feature_creativity_block, .feature_quality_block
+    {
+        width: 80%;
+        text-align: center;
+        margin: 1% auto;
+    }
+
+    .feature_passion_block h3
+    {
+        font-size: 45px;
+    }
+
+    .feature_passion_block p
+    {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .feature_creativity_block h3
+    {
+        font-size: 45px;
+    }
+
+    .feature_creativity_block p
+    {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .feature_quality_block h3
+    {
+        font-size: 45px;
+    }
+
+    .feature_quality_block p
+    {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .works_container
+    {
+        padding-bottom: 1400px;
+    }
+
+    .works_left_block
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .works_right_block
+    {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .works_container img
+    {
+        width: 80%;
+        height: auto;
+    }
+
+    .works_block
+    {
+        width: 45%;
+    }
+
+    .works_block img
+    {
+        width: 95%;
+    }
+
+    .conclusion_container
+    {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .menu_bottom_feature_block, .menu_bottom_works_block
+    {
+        width: 35%;
+        margin: 4%;
+    }
+
+    .menu_bottom_communication_block, .menu_bottom_updates_block
+    {
+        width: 30%;
+        margin: 3%;
+    }
+
+    .footer_block
+    {
+        width: 90%;
+    }
+
+    .footer_left_block
+    {
+        margin-left: 1%;
+        margin-right: 15%;
+    }
+
+    .footer_block p
+    {
+        padding: 0 5px;
+    }
+}
