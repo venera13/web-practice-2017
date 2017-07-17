@@ -45,18 +45,24 @@ p
     color: #3d464a;
 }
 
-.list_container h2
+img
 {
-    margin-bottom: 70px;
-    margin-right: 60px;
-    margin-left: 40px;
+    max-width: 100%;
+    height: auto;
 }
 
 .main_container
 {
     margin: 0 auto;
-    width: 100%;
     background: white;
+    width: 100%;
+}
+
+.list_container h2
+{
+    margin-bottom: 70px;
+    margin-right: 60px;
+    margin-left: 40px;
 }
 
 .blockquote_container
