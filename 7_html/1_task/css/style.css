@@ -35,6 +35,7 @@ h4
     font-family: "Open Sans", sans-serif, tahoma;
     font-size: 18px;
     color: #3d464a;
+    padding: 7px 0;
 }
 
 p
@@ -49,6 +50,26 @@ img
 {
     max-width: 100%;
     height: auto;
+}
+
+li
+{
+    color: #19a9e5;
+}
+
+a
+{
+    color: #19a9e5;
+}
+
+a:visited
+{
+    color: #3843ca;
+}
+
+a:active
+{
+    color: #8c2598
 }
 
 .main_container
@@ -89,29 +110,29 @@ img
     width: 1000px;
 }
 
-.study_container
+.education_container
 {
     margin: 70px auto;
     width: 1000px;
 }
 
-.study_container h2
+.education_container h2
 {
     text-align: center;
 }
 
-.study_block
+.education_block
 {
     margin: 50px 140px;
 }
 
-.study_block  p:first-letter
+.education_block  p:first-letter
 {
     color: #19a9e5;
     font-size: 20px;
 }
 
-.study
+.education
 {
     width: 350px;
     text-align: center;
@@ -121,7 +142,7 @@ img
     margin-bottom: 50px;
 }
 
-.study.right
+.education.right
 {
     border-right: 1px solid #e5e5ea;
 
@@ -151,30 +172,23 @@ img
     margin-left: 50px;
 }
 
+.movie_image
+{
+    position: relative;
+    height: 120px;
+}
+
+.movie_home
+{
+    height: 95px;
+}
+
 .movie
 {
     width: 210px;
     text-align: center;
-}
-
-.h4_illusion
-{
-    margin-bottom: 54px;
-}
-
-.h4_home
-{
-    margin-bottom: 20px;
-}
-
-.h4_lend
-{
-    margin-bottom: 21px;
-}
-
-.h4_raindow
-{
-    margin-bottom: 46px;
+    position: absolute;
+    bottom: 0;
 }
 
 .author
@@ -182,7 +196,6 @@ img
     text-align: center;
     font-size: 17px;
     font-weight: 600;
-    text-indent: -19px;
     opacity: 0.8;
 }
 
@@ -199,26 +212,27 @@ img
 
 .hobby_container
 {
-    margin: 50px auto;
+    margin: 30px auto;
 }
 
 .hobby_block
 {
     margin: 20px auto;
     background: #f5f5f5;
-    text-align: center;
+    text-align: left;
     padding: 50px 600px;
+}
+
+.hobby_block h2
+{
+    width: 60%;
+    margin: 0 auto;
 }
 
 .hobby_block p
 {
     font-weight: 600;
     line-height: 1;
-}
-
-li
-{
-    color: #19a9e5;
 }
 
 .float_right
@@ -236,14 +250,9 @@ li
     clear: both;
 }
 
-.image
-{
-    text-align: center;
-}
-
 .footer_container
 {
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 20px 180px;
     background: #bdc1c7;
     color: #181a1d;
@@ -251,15 +260,713 @@ li
 
 .footer_block
 {
-    padding: 0 100px;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
-@media screen and (min-width:200px) and (max-width:1024px)
+.footer_separate_block
+{
+    padding-right: 200px;
+}
+
+@media only screen and (max-width: 320px)
 {
     p
     {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    ul
+    {
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    .main_container
+    {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .title_container
+    {
+        width: 95%;
+        padding: 0 2%;
+        margin: 0 2%;
+    }
+
+    .photo
+    {
+
+        margin: 0 auto;
+    }
+
+    .h1_title_text, .h2_title_text
+    {
+        width: 90%;
+        float: none;
+    }
+
+    .float_right
+    {
+        float: none;
+    }
+
+    .float_left
+    {
+        float: none;
+    }
+
+    .blockquote_container
+    {
+        margin: 30px auto;
+    }
+
+    .blockquote
+    {
+        width: 95%;
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    .education_container
+    {
+        width: 95%;
+    }
+
+    .education_block
+    {
+        margin: 50px auto;
+    }
+
+    .education
+    {
+        width: 75%;
+        margin: 0 auto;
+        border-right: 1px solid #e5e5ea;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_container h4
+    {
+        margin: 15px auto;
+    }
+
+    .movie_block
+    {
+        width: 95%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .hobby_container
+    {
+        width: 95%;
+    }
+
+    .hobby_block
+    {
+        width: 95%;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .movie_image
+    {
+        position: relative;
+        height: 120px;
+    }
+
+    .movie
+    {
+        width: 65%;
+        right: 15%;
+    }
+
+    .footer_container
+    {
+        margin-top: 70px;
+    }
+
+    .footer_block
+    {
+        font-size: 12px;
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .footer_separate_block
+    {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 440px)
+{
+    p
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    ul
+    {
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    .main_container
+    {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .title_container
+    {
+        width: 95%;
+        padding: 0 2%;
+        margin: 0 2%;
+    }
+
+    .photo
+    {
+
+        margin: 0 auto;
+    }
+
+    .h1_title_text, .h2_title_text
+    {
+        width: 90%;
+        float: none;
+    }
+
+    .float_right
+    {
+        float: none;
+    }
+
+    .float_left
+    {
+        float: none;
+    }
+
+    .blockquote_container
+    {
+        margin: 30px auto;
+    }
+
+    .blockquote
+    {
+        width: 95%;
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    .education_container
+    {
+        width: 95%;
+    }
+
+    .education_block
+    {
+        margin: 50px auto;
+    }
+
+    .education
+    {
+        width: 75%;
+        margin: 0 auto;
+        border-right: 1px solid #e5e5ea;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_container h4
+    {
+        margin: 15px auto;
+    }
+
+    .movie_block
+    {
+        width: 95%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .hobby_container
+    {
+        width: 95%;
+    }
+
+    .hobby_block
+    {
+        width: 95%;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .movie_image
+    {
+        position: relative;
+        height: 150px;
+    }
+
+    .movie
+    {
+        width: 65%;
+        right: 15%;
+    }
+
+    .footer_container
+    {
+        margin-top: 70px;
+    }
+
+    .footer_block
+    {
+        padding: 0;
+        width: 90%;
+        text-align: left;
+    }
+
+    .footer_separate_block
+    {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 595px)
+{
+    ul
+    {
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    .main_container
+    {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .title_container
+    {
+        width: 95%;
+        padding: 0 2%;
+        margin: 0 2%;
+    }
+
+    .photo
+    {
+
+        margin: 0 auto;
+    }
+
+    .h1_title_text, .h2_title_text
+    {
+        width: 90%;
+        float: none;
+    }
+
+    .float_right
+    {
+        float: none;
+    }
+
+    .float_left
+    {
+        float: none;
+    }
+
+    .blockquote_container
+    {
+        margin: 30px auto;
+    }
+
+    .blockquote
+    {
+        width: 95%;
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    .education_container
+    {
+        width: 95%;
+    }
+
+    .education_block
+    {
+        margin: 50px auto;
+    }
+
+    .education
+    {
+        width: 75%;
+        margin: 0 auto;
+        border-right: 1px solid #e5e5ea;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_container h4
+    {
+        margin: 15px auto;
+    }
+
+    .movie_block
+    {
+        width: 65%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .hobby_container
+    {
+        width: 95%;
+    }
+
+    .hobby_block
+    {
+        width: 95%;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .movie_image
+    {
+        position: relative;
+        height: 120px;
+    }
+
+    .movie
+    {
+        width: 55%;
+        right: 20%;
+    }
+
+    .footer_container
+    {
+        margin-top: 70px;
+    }
+
+    .footer_block
+    {
+        padding: 0;
+        width: 90%;
+        text-align: left;
+    }
+
+    .footer_separate_block
+    {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 595px) and (max-width: 750px)
+{
+    ul
+    {
+        width: 10%;
+        margin: 0 auto;
+    }
+
+    .main_container
+    {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .title_container
+    {
+        width: 95%;
+        padding: 0 2%;
+        margin: 0 2%;
+    }
+
+    .photo
+    {
+
+        margin: 0 auto;
+    }
+
+    .h1_title_text, .h2_title_text
+    {
+        width: 90%;
+        float: none;
+    }
+
+    .float_right
+    {
+        float: none;
+    }
+
+    .float_left
+    {
+        float: none;
+    }
+
+    .blockquote_container
+    {
+        margin: 30px auto;
+    }
+
+    .blockquote
+    {
+        width: 95%;
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    .education_container
+    {
+        width: 95%;
+    }
+
+    .education_block
+    {
+        margin: 50px auto;
+    }
+
+    .education
+    {
+        width: 75%;
+        margin: 0 auto;
+        border-right: 1px solid #e5e5ea;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_container h4
+    {
+        margin: 15px auto;
+    }
+
+    .movie_block
+    {
+        width: 95%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .hobby_container
+    {
+        width: 95%;
+    }
+
+    .hobby_block
+    {
+        width: 95%;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .hobby_block h2
+    {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .movie_image
+    {
+        position: relative;
+        height: 120px;
+    }
+
+    .movie
+    {
+        width: 65%;
+        right: 15%;
+    }
+
+    .footer_container
+    {
+        margin-top: 70px;
+    }
+
+    .footer_block
+    {
+        padding: 0;
+        width: 90%;
+        text-align: left;
+    }
+
+    .footer_separate_block
+    {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 830px)
+{
+    ul
+    {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .main_container
+    {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .title_container
+    {
+        width: 95%;
+        padding: 0 2%;
+        margin: 0 2%;
+    }
+
+    .photo
+    {
+
+        margin: 0 auto;
+    }
+
+    .h1_title_text, .h2_title_text
+    {
+        width: 90%;
+        float: none;
+    }
+
+    .float_right
+    {
+        float: none;
+    }
+
+    .float_left
+    {
+        float: none;
+    }
+
+    .blockquote_container
+    {
+        margin: 30px auto;
+    }
+
+    .blockquote
+    {
+        width: 95%;
+        margin: 0 5px;
+        font-size: 24px;
+    }
+
+    .education_container
+    {
+        width: 95%;
+    }
+
+    .education_block
+    {
+        margin: 50px auto;
+    }
+
+    .education
+    {
+        width: 75%;
+        margin: 0 auto;
+        border-right: 1px solid #e5e5ea;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_container h4
+    {
+        margin: 15px auto;
+    }
+
+    .movie_block
+    {
+        width: 95%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .hobby_container
+    {
+        width: 95%;
+    }
+
+    .hobby_block
+    {
+        width: 95%;
+        padding: 0;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .hobby_block h2
+    {
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    .movie_image
+    {
+        position: relative;
+        height: 120px;
+    }
+
+    .movie
+    {
+        width: 28%;
+        right: 35%;
+    }
+
+    .footer_container
+    {
+        margin-top: 70px;
+    }
+
+    .footer_block
+    {
+        padding: 0;
+        width: 90%;
+        text-align: left;
+    }
+
+    .footer_separate_block
+    {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 830px) and (max-width: 1024px)
+{
+    p
+    {
+        font-size: 15px;
         line-height: 24px;
+    }
+
+    ul
+    {
+        width: 20%;
+        margin: 0 auto;
     }
 
     .main_container
@@ -310,17 +1017,17 @@ li
         font-size: 24px;
     }
 
-    .study_container
+    .education_container
     {
         width: 95%;
     }
 
-    .study_block
+    .education_block
     {
         margin: 50px auto;
     }
 
-    .study
+    .education
     {
         width: 75%;
         margin: 0 auto;
@@ -340,7 +1047,20 @@ li
     .movie_block
     {
         width: 95%;
-        margin-bottom: 10px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .movie_image
+    {
+        position: relative;
+        height: 200px;
+    }
+
+    .movie
+    {
+        width: 35%;
+        right: 30%;
     }
 
     .hobby_container
@@ -371,5 +1091,10 @@ li
         padding: 0;
         width: 90%;
         text-align: left;
+    }
+
+    .footer_separate_block
+    {
+        padding: 0;
     }
 }
