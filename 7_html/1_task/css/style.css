@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
 
 html, body
 {
@@ -14,19 +15,19 @@ body
 
 h1
 {
-    font-family: "Roboto", tahoma, arial, sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 25px;
     text-align: left;
-    margin-right: 550px;
+    margin-right: 566px;
     color: #3d464a;
     font-weight: 500;
 }
 
 h2
 {
-    font-family: "Roboto", tahoma, arial, sans-serif;
+    font-family: 'EB Garamond', serif;
     font-size: 26px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #3d464a;
 }
 
@@ -40,8 +41,8 @@ h4
 
 p
 {
-    font-family: "Open Sans", sans-serif, tahoma;
-    font-size: 15px;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px;
     line-height: 28px;
     color: #3d464a;
 }
@@ -59,12 +60,13 @@ li
 
 a
 {
-    color: #19a9e5;
+    color: #4364e5;
+    text-decoration: none;
 }
 
 a:visited
 {
-    color: #3843ca;
+    color: #4364e5;
 }
 
 a:active
@@ -110,6 +112,11 @@ a:active
     width: 1000px;
 }
 
+.h1_title_text
+{
+    margin-left: 5px;
+}
+
 .education_container
 {
     margin: 70px auto;
@@ -126,6 +133,14 @@ a:active
     margin: 50px 140px;
 }
 
+.h2_title_text a
+{
+    color: #19a9e5;
+    font-style: italic;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 .education_block  p:first-letter
 {
     color: #19a9e5;
@@ -136,15 +151,15 @@ a:active
 {
     width: 350px;
     text-align: center;
-    border-left: 1px solid #e5e5ea;
-    border-top: 1px solid #e5e5ea;
-    border-bottom: 1px solid #e5e5ea;
+    border-left: 2px solid #e5e5ea;
+    border-top: 2px solid #e5e5ea;
+    border-bottom: 2px solid #e5e5ea;
     margin-bottom: 50px;
 }
 
-.education.right
+.education_right
 {
-    border-right: 1px solid #e5e5ea;
+    border-right: 2px solid #e5e5ea;
 
 }
 
@@ -212,21 +227,17 @@ a:active
 
 .hobby_container
 {
-    margin: 30px auto;
+    width: 100%;
+    margin: 70px auto;
+    background: #f5f5f5;
+    padding: 60px 0;
 }
 
 .hobby_block
 {
+    width: 200px;
     margin: 20px auto;
-    background: #f5f5f5;
     text-align: left;
-    padding: 50px 600px;
-}
-
-.hobby_block h2
-{
-    width: 60%;
-    margin: 0 auto;
 }
 
 .hobby_block p
@@ -252,9 +263,8 @@ a:active
 
 .footer_container
 {
-    margin-top: 150px;
     padding: 20px 180px;
-    background: #bdc1c7;
+    background: #e3e3e3;
     color: #181a1d;
 }
 
@@ -262,839 +272,392 @@ a:active
 {
     width: 800px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding-bottom: 10px;
 }
 
 .footer_separate_block
 {
-    padding-right: 200px;
+    margin-right: 200px;
+    color: #4364e5;
+}
+
+@media screen and (min-width: 830px) and (max-width: 1125px)
+{
+    .photo
+    {
+        width: 225px;
+        margin-left: 10px;
+    }
+
+    h1
+    {
+        margin-right: 51%;
+    }
+
+    .title_container
+    {
+        width: 95%;
+    }
+
+    .h1_title_text
+    {
+        width: 62%;
+    }
+
+    .education_container
+    {
+        margin: 70px auto;
+        width: 95%;
+    }
+
+    .education_block
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .education
+    {
+        width: 49%;
+    }
+
+    .h2_title_text
+    {
+        width: 95%;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .footer_container
+    {
+        padding: 20px 80px;
+        background: #e3e3e3;
+        color: #181a1d;
+    }
+
+    .footer_block
+    {
+        width: 95%;
+    }
+
+    .footer_separate_block
+    {
+        margin-right: 25%;
+    }
+}
+
+@media screen and (min-width: 610px) and (max-width: 830px)
+{
+    h1
+    {
+        width: 80px;
+        margin: 0 auto;
+        clear: both;
+    }
+
+    .float_right
+    {
+        clear: both;
+    }
+
+    .photo
+    {
+        width: 225px;
+        margin: 0 auto;
+    }
+
+    .title_container
+    {
+        width: 95%;
+        text-align: center;
+        clear: both;
+    }
+
+    .h1_title_text
+    {
+        width: 90%;
+        clear: both;
+    }
+
+    .blockquote
+    {
+        margin: 30px auto;
+        width: 95%;
+    }
+
+    .education_container
+    {
+        margin: 70px auto;
+        width: 95%;
+    }
+
+    .education_block
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .education
+    {
+        width: 49%;
+    }
+
+    .h2_title_text
+    {
+        width: 95%;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_block
+    {
+        text-align: center;
+        width: 95%;
+        padding: 3px;
+        margin: 5px;
+    }
+
+    .movie_block img
+    {
+        position: static;
+    }
+
+    .hobby_container
+    {
+        width: 100%;
+    }
+
+    .footer_container
+    {
+        padding: 20px 30px;
+    }
+
+    .footer_block
+    {
+        width: 95%;
+    }
+
+    .footer_separate_block
+    {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 610px)
+{
+    .title_container
+    {
+        width: 95%;
+        text-align: center;
+        clear: both;
+        margin: 30px auto;
+    }
+
+    .h1_title_text
+    {
+        width: 90%;
+    }
+
+    .float_right
+    {
+        clear: both;
+    }
+
+    .blockquote
+    {
+        margin: 30px auto;
+        width: 95%;
+        font-size: 26px;
+    }
+
+    .education_container
+    {
+        margin: 70px auto;
+        width: 95%;
+    }
+
+    .education_block
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .education
+    {
+        width: 46%;
+    }
+
+    .education p
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .h2_title_text
+    {
+        width: 95%;
+        text-align: center;
+    }
+
+    .movie_container
+    {
+        width: 95%;
+    }
+
+    .movie_block
+    {
+        text-align: center;
+        width: 95%;
+        padding: 3px;
+        margin: 5px;
+    }
+
+    .movie_block img
+    {
+        position: static;
+    }
+
+    .hobby_container
+    {
+        width: 100%;
+    }
+
+    .hobby_block
+    {
+        width: 150px;
+    }
+
+    .footer_container
+    {
+        padding: 20px 5px;
+    }
+
+    .footer_block
+    {
+        width: 95%;
+    }
+
+    .footer_separate_block
+    {
+        margin-right: 10px;
+        clear: both;
+    }
 }
 
 @media only screen and (max-width: 320px)
 {
-    p
-    {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    ul
-    {
-        width: 10%;
-        margin: 0 auto;
-    }
-
-    .main_container
-    {
-        width: 100%;
-        margin: 2%;
-    }
-
     .title_container
     {
-        width: 95%;
-        padding: 0 2%;
-        margin: 0 2%;
+        width: 310px;
+        text-align: center;
+        clear: both;
+        margin: 30px auto;
     }
 
-    .photo
+    .h1_title_text
     {
-
-        margin: 0 auto;
-    }
-
-    .h1_title_text, .h2_title_text
-    {
-        width: 90%;
-        float: none;
+        width: 310px;
     }
 
     .float_right
     {
-        float: none;
-    }
-
-    .float_left
-    {
-        float: none;
+        clear: both;
     }
 
     .blockquote_container
     {
-        margin: 30px auto;
+        width: 320px;
     }
 
     .blockquote
     {
-        width: 95%;
-        margin: 0 5px;
-        font-size: 24px;
-    }
-
-    .education_container
-    {
-        width: 95%;
-    }
-
-    .education_block
-    {
-        margin: 50px auto;
-    }
-
-    .education
-    {
-        width: 75%;
-        margin: 0 auto;
-        border-right: 1px solid #e5e5ea;
-    }
-
-    .movie_container
-    {
-        width: 95%;
-    }
-
-    .movie_container h4
-    {
-        margin: 15px auto;
-    }
-
-    .movie_block
-    {
-        width: 95%;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    .hobby_container
-    {
-        width: 95%;
-    }
-
-    .hobby_block
-    {
-        width: 95%;
-        padding: 0;
-        text-align: left;
-        margin: 0 auto;
-    }
-
-    .movie_image
-    {
-        position: relative;
-        height: 120px;
-    }
-
-    .movie
-    {
-        width: 65%;
-        right: 15%;
-    }
-
-    .footer_container
-    {
-        margin-top: 70px;
-    }
-
-    .footer_block
-    {
-        font-size: 12px;
-        padding: 0;
-        width: 100%;
-        text-align: left;
-    }
-
-    .footer_separate_block
-    {
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 440px)
-{
-    p
-    {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    ul
-    {
-        width: 10%;
-        margin: 0 auto;
-    }
-
-    .main_container
-    {
-        width: 100%;
-        margin: 2%;
-    }
-
-    .title_container
-    {
-        width: 95%;
-        padding: 0 2%;
-        margin: 0 2%;
-    }
-
-    .photo
-    {
-
-        margin: 0 auto;
-    }
-
-    .h1_title_text, .h2_title_text
-    {
-        width: 90%;
-        float: none;
-    }
-
-    .float_right
-    {
-        float: none;
-    }
-
-    .float_left
-    {
-        float: none;
-    }
-
-    .blockquote_container
-    {
         margin: 30px auto;
+        width: 310px;
+        font-size: 26px;
     }
 
-    .blockquote
+    .author
     {
-        width: 95%;
-        margin: 0 5px;
-        font-size: 24px;
+        width: 150px;
+        margin: 0 auto;
     }
 
     .education_container
     {
-        width: 95%;
+        margin: 70px auto;
+        width: 310px;
     }
 
     .education_block
     {
-        margin: 50px auto;
+        width: 320px;
+        margin: 0 auto;
     }
 
     .education
     {
-        width: 75%;
-        margin: 0 auto;
-        border-right: 1px solid #e5e5ea;
+        width: 150px;
+    }
+
+    .education p
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .h2_title_text
+    {
+        width: 310px;
+        text-align: center;
     }
 
     .movie_container
     {
-        width: 95%;
-    }
-
-    .movie_container h4
-    {
-        margin: 15px auto;
+        width: 310px;
     }
 
     .movie_block
     {
-        width: 95%;
-        margin: 10px auto;
         text-align: center;
+        width: 310px;
+        padding: 3px;
+        margin: 5px;
+    }
+
+    .movie_block img
+    {
+        position: static;
     }
 
     .hobby_container
     {
-        width: 95%;
+        width: 320px;
     }
 
     .hobby_block
     {
-        width: 95%;
-        padding: 0;
-        text-align: left;
-        margin: 0 auto;
-    }
-
-    .movie_image
-    {
-        position: relative;
-        height: 150px;
-    }
-
-    .movie
-    {
-        width: 65%;
-        right: 15%;
+        width: 150px;
     }
 
     .footer_container
     {
-        margin-top: 70px;
+        padding: 20px 5px;
     }
 
     .footer_block
     {
-        padding: 0;
-        width: 90%;
-        text-align: left;
+        width: 310px;
     }
 
     .footer_separate_block
     {
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 440px) and (max-width: 595px)
-{
-    ul
-    {
-        width: 10%;
-        margin: 0 auto;
-    }
-
-    .main_container
-    {
-        width: 100%;
-        margin: 2%;
-    }
-
-    .title_container
-    {
-        width: 95%;
-        padding: 0 2%;
-        margin: 0 2%;
-    }
-
-    .photo
-    {
-
-        margin: 0 auto;
-    }
-
-    .h1_title_text, .h2_title_text
-    {
-        width: 90%;
-        float: none;
-    }
-
-    .float_right
-    {
-        float: none;
-    }
-
-    .float_left
-    {
-        float: none;
-    }
-
-    .blockquote_container
-    {
-        margin: 30px auto;
-    }
-
-    .blockquote
-    {
-        width: 95%;
-        margin: 0 5px;
-        font-size: 24px;
-    }
-
-    .education_container
-    {
-        width: 95%;
-    }
-
-    .education_block
-    {
-        margin: 50px auto;
-    }
-
-    .education
-    {
-        width: 75%;
-        margin: 0 auto;
-        border-right: 1px solid #e5e5ea;
-    }
-
-    .movie_container
-    {
-        width: 95%;
-    }
-
-    .movie_container h4
-    {
-        margin: 15px auto;
-    }
-
-    .movie_block
-    {
-        width: 65%;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    .hobby_container
-    {
-        width: 95%;
-    }
-
-    .hobby_block
-    {
-        width: 95%;
-        padding: 0;
-        text-align: left;
-        margin: 0 auto;
-    }
-
-    .movie_image
-    {
-        position: relative;
-        height: 120px;
-    }
-
-    .movie
-    {
-        width: 55%;
-        right: 20%;
-    }
-
-    .footer_container
-    {
-        margin-top: 70px;
-    }
-
-    .footer_block
-    {
-        padding: 0;
-        width: 90%;
-        text-align: left;
-    }
-
-    .footer_separate_block
-    {
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 595px) and (max-width: 750px)
-{
-    ul
-    {
-        width: 10%;
-        margin: 0 auto;
-    }
-
-    .main_container
-    {
-        width: 100%;
-        margin: 2%;
-    }
-
-    .title_container
-    {
-        width: 95%;
-        padding: 0 2%;
-        margin: 0 2%;
-    }
-
-    .photo
-    {
-
-        margin: 0 auto;
-    }
-
-    .h1_title_text, .h2_title_text
-    {
-        width: 90%;
-        float: none;
-    }
-
-    .float_right
-    {
-        float: none;
-    }
-
-    .float_left
-    {
-        float: none;
-    }
-
-    .blockquote_container
-    {
-        margin: 30px auto;
-    }
-
-    .blockquote
-    {
-        width: 95%;
-        margin: 0 5px;
-        font-size: 24px;
-    }
-
-    .education_container
-    {
-        width: 95%;
-    }
-
-    .education_block
-    {
-        margin: 50px auto;
-    }
-
-    .education
-    {
-        width: 75%;
-        margin: 0 auto;
-        border-right: 1px solid #e5e5ea;
-    }
-
-    .movie_container
-    {
-        width: 95%;
-    }
-
-    .movie_container h4
-    {
-        margin: 15px auto;
-    }
-
-    .movie_block
-    {
-        width: 95%;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    .hobby_container
-    {
-        width: 95%;
-    }
-
-    .hobby_block
-    {
-        width: 95%;
-        padding: 0;
-        text-align: left;
-        margin: 0 auto;
-    }
-
-    .hobby_block h2
-    {
-        width: 25%;
-        margin: 0 auto;
-    }
-
-    .movie_image
-    {
-        position: relative;
-        height: 120px;
-    }
-
-    .movie
-    {
-        width: 65%;
-        right: 15%;
-    }
-
-    .footer_container
-    {
-        margin-top: 70px;
-    }
-
-    .footer_block
-    {
-        padding: 0;
-        width: 90%;
-        text-align: left;
-    }
-
-    .footer_separate_block
-    {
-        padding: 0;
-    }
-}
-
-@media only screen and (min-width: 750px) and (max-width: 830px)
-{
-    ul
-    {
-        width: 20%;
-        margin: 0 auto;
-    }
-
-    .main_container
-    {
-        width: 100%;
-        margin: 2%;
-    }
-
-    .title_container
-    {
-        width: 95%;
-        padding: 0 2%;
-        margin: 0 2%;
-    }
-
-    .photo
-    {
-
-        margin: 0 auto;
-    }
-
-    .h1_title_text, .h2_title_text
-    {
-        width: 90%;
-        float: none;
-    }
-
-    .float_right
-    {
-        float: none;
-    }
-
-    .float_left
-    {
-        float: none;
-    }
-
-    .blockquote_container
-    {
-        margin: 30px auto;
-    }
-
-    .blockquote
-    {
-        width: 95%;
-        margin: 0 5px;
-        font-size: 24px;
-    }
-
-    .education_container
-    {
-        width: 95%;
-    }
-
-    .education_block
-    {
-        margin: 50px auto;
-    }
-
-    .education
-    {
-        width: 75%;
-        margin: 0 auto;
-        border-right: 1px solid #e5e5ea;
-    }
-
-    .movie_container
-    {
-        width: 95%;
-    }
-
-    .movie_container h4
-    {
-        margin: 15px auto;
-    }
-
-    .movie_block
-    {
-        width: 95%;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    .hobby_container
-    {
-        width: 95%;
-    }
-
-    .hobby_block
-    {
-        width: 95%;
-        padding: 0;
-        text-align: left;
-        margin: 0 auto;
-    }
-
-    .hobby_block h2
-    {
-        width: 25%;
-        margin: 0 auto;
-    }
-
-    .movie_image
-    {
-        position: relative;
-        height: 120px;
-    }
-
-    .movie
-    {
-        width: 28%;
-        right: 35%;
-    }
-
-    .footer_container
-    {
-        margin-top: 70px;
-    }
-
-    .footer_block
-    {
-        padding: 0;
-        width: 90%;
-        text-align: left;
-    }
-
-    .footer_separate_block
-    {
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 830px) and (max-width: 1024px)
-{
-    p
-    {
-        font-size: 15px;
-        line-height: 24px;
-    }
-
-    ul
-    {
-        width: 20%;
-        margin: 0 auto;
-    }
-
-    .main_container
-    {
-        width: 100%;
-        margin: 1%;
-        max-width: 1000px;
-    }
-
-    .title_container
-    {
-        width: 95%;
-        padding: 0 2%;
-        margin: 0 2%;
-    }
-
-    .photo
-    {
-
-        margin: 0 auto;
-    }
-
-    .h1_title_text, .h2_title_text
-    {
-        width: 90%;
-        float: none;
-    }
-
-    .float_right
-    {
-        float: none;
-    }
-
-    .float_left
-    {
-        float: none;
-    }
-
-    .blockquote_container
-    {
-        margin: 30px auto;
-    }
-
-    .blockquote
-    {
-        width: 95%;
-        margin: 0 5px;
-        font-size: 24px;
-    }
-
-    .education_container
-    {
-        width: 95%;
-    }
-
-    .education_block
-    {
-        margin: 50px auto;
-    }
-
-    .education
-    {
-        width: 75%;
-        margin: 0 auto;
-        border-right: 1px solid #e5e5ea;
-    }
-
-    .movie_container
-    {
-        width: 95%;
-    }
-
-    .movie_container h4
-    {
-        margin: 15px auto;
-    }
-
-    .movie_block
-    {
-        width: 95%;
-        margin: 10px auto;
-        text-align: center;
-    }
-
-    .movie_image
-    {
-        position: relative;
-        height: 200px;
-    }
-
-    .movie
-    {
-        width: 35%;
-        right: 30%;
-    }
-
-    .hobby_container
-    {
-        width: 95%;
-    }
-
-    .hobby_block
-    {
-        width: 95%;
-        padding: 0;
-        text-align: left;
-    }
-
-    .hobby_block h2
-    {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .footer_container
-    {
-        margin-top: 70px;
-    }
-
-    .footer_block
-    {
-        padding: 0;
-        width: 90%;
-        text-align: left;
-    }
-
-    .footer_separate_block
-    {
-        padding: 0;
+        margin-right: 10px;
+        clear: both;
     }
 }
