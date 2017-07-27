@@ -119,7 +119,7 @@ a:active
 
 .education_container
 {
-    margin: 70px auto;
+    margin: 90px auto;
     width: 1000px;
 }
 
@@ -165,8 +165,10 @@ a:active
 
 .movie_container
 {
-    margin: 70px auto;
+    margin:90px auto;
+    padding-top: 80px;
     width: 1100px;
+    border-top: 2px solid #e3e3e3; border-top-style: groove;
 }
 
 .movie_container h2
@@ -176,9 +178,8 @@ a:active
 
 .movie_block
 {
-    width: 24%;
-    padding: 3px;
-    margin-bottom: 50px;
+    width: 23%;
+    margin: 7px;
 }
 
 .photo
@@ -228,14 +229,14 @@ a:active
 .hobby_container
 {
     width: 100%;
-    margin: 70px auto;
+    margin: 0 auto;
     background: #f5f5f5;
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .hobby_block
 {
-    width: 200px;
+    width: 160px;
     margin: 20px auto;
     text-align: left;
 }
@@ -287,28 +288,11 @@ a:active
     {
         width: 115px;
         margin: 0 auto;
-        font-size: 34px;
-    }
-
-    h2
-    {
-        font-size: 30px;
-    }
-
-    h4
-    {
-        font-size: 22px;
-    }
-
-    p
-    {
-        font-size: 30px;
-        line-height: 38px;
     }
 
     .float_right
     {
-        clear: both;
+        float: none;
     }
 
     .photo
@@ -325,7 +309,7 @@ a:active
 
     .h1_title_text
     {
-        width: 95%;
+        width: 80%;
         margin: 0 auto;
     }
 
@@ -336,7 +320,6 @@ a:active
 
     .education_container
     {
-        margin: 70px auto;
         width: 95%;
     }
 
@@ -375,7 +358,7 @@ a:active
 
     .footer_separate_block
     {
-        margin-right: 25%;
+        margin-right: 20%;
     }
 }
 
@@ -383,31 +366,13 @@ a:active
 {
     h1
     {
-        width: 80px;
+        text-align: center;
         margin: 0 auto;
-        clear: both;
-        font-size: 34px;
-    }
-
-    h2
-    {
-        font-size: 30px;
-    }
-
-    h4
-    {
-        font-size: 22px;
-    }
-
-    p
-    {
-        font-size: 30px;
-        line-height: 38px;
     }
 
     .float_right
     {
-        clear: both;
+        float: none;
     }
 
     .photo
@@ -426,7 +391,6 @@ a:active
     .h1_title_text
     {
         width: 90%;
-        clear: both;
     }
 
     .blockquote
@@ -500,26 +464,8 @@ a:active
 {
     h1
     {
-        width: 80px;
+        text-align: center;
         margin: 0 auto;
-        clear: both;
-        font-size: 32px;
-    }
-
-    h2
-    {
-        font-size: 28px;
-    }
-
-    h4
-    {
-        font-size: 20px;
-    }
-
-    p
-    {
-        font-size: 28px;
-        line-height: 35px;
     }
 
     .title_container
@@ -537,7 +483,7 @@ a:active
 
     .float_right
     {
-        clear: both;
+        float: none;
     }
 
     .blockquote
@@ -612,12 +558,13 @@ a:active
     .footer_block
     {
         width: 95%;
+        font-size: 12px;
     }
 
     .footer_separate_block
     {
-        margin-right: 10px;
-        clear: both;
+        margin-right: 5px;
+        float: none;
     }
 }
 
@@ -625,33 +572,15 @@ a:active
 {
     h1
     {
-        width: 80px;
+        text-align: center;
         margin: 0 auto;
-        clear: both;
-        font-size: 30px;
-    }
-
-    h2
-    {
-        font-size: 28px;
-    }
-
-    h4
-    {
-        font-size: 20px;
-    }
-
-    p
-    {
-        font-size: 25px;
-        line-height: 35px;
     }
 
     .title_container
     {
         width: 310px;
         text-align: center;
-        clear: both;
+        float: none;
         margin: 30px auto;
     }
 
@@ -662,7 +591,7 @@ a:active
 
     .float_right
     {
-        clear: both;
+        float: none;
     }
 
     .blockquote_container
@@ -748,11 +677,12 @@ a:active
     .footer_block
     {
         width: 310px;
+        font-size: 12px;
     }
 
     .footer_separate_block
     {
-        margin-right: 10px;
-        clear: both;
+        margin-right: 5px;
+        float: none;
     }
 }
