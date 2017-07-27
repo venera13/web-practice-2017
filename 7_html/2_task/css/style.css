@@ -93,6 +93,17 @@ a:active
     color: #8c2598
 }
 
+.button
+{
+    background: #00bc9c;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 2px;
+    opacity: 1;
+}
+
 .float_left
 {
     float: left;
@@ -156,6 +167,14 @@ a:active
     margin: 0 auto;
     clear: both;
     height: 60px;
+}
+
+.humburger
+{
+    float: right;
+    padding: 3px 6px;
+    display: none;
+    margin: 5px;
 }
 
 .menu_item_icon
@@ -242,8 +261,14 @@ a:active
 .feature_creativity_block,
 .feature_quality_block
 {
-    width: 260px;
-    padding-left: 72px;
+    width: 33%;
+    max-width: 350px;
+}
+
+.feature_icon
+{
+    margin: 19px 10px;
+    height: 286px;
 }
 
 .works_container
@@ -354,7 +379,6 @@ a:active
 
 .menu_bottom_block h3
 {
-    margin-bottom: 60px;
     color: white;
 }
 
@@ -365,13 +389,14 @@ a:active
     height: 10px;
 }
 
-.menu_bottom_updates_block .button
+.input_button
 {
     font-size: 11px;
     position: absolute;
     right: 0;
     padding: 5px 5px;
     margin:5px 0;
+    width: 70px;
 }
 
 .menu_bottom_block p
@@ -388,6 +413,11 @@ a:active
 .menu_works_block img
 {
     width: 90px;
+}
+
+.works_images_block
+{
+    width: 190px;
 }
 
 .info
@@ -457,7 +487,7 @@ a:active
     .feature_separate_block
     {
         width: 100%;
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -465,8 +495,19 @@ a:active
     .feature_creativity_block,
     .feature_quality_block
     {
-        width: 180px;
-        padding-left: 60px;
+        width: 30%;
+        margin: 5px;
+    }
+
+    .feature_icon
+    {
+        margin: 19px 10px;
+        height: 230px;
+    }
+
+    .feature_icon
+    {
+        margin: 19px 5px;
     }
 
     .works_blocks
@@ -527,11 +568,6 @@ a:active
         margin: 10px;
     }
 
-    .menu_bottom_feature_block h3
-    {
-        margin-bottom: 60px;
-    }
-
     .input
     {
         width: 215px;
@@ -570,7 +606,7 @@ a:active
 
     ul
     {
-        margin-left: 30px;
+        display: none;
     }
 
     li
@@ -581,12 +617,17 @@ a:active
 
     .header_block
     {
-        width: 600px;
+        width: 590px;
     }
 
     .menu_container
     {
-        width: 600px;
+        width: 590px;
+    }
+
+    .humburger
+    {
+        display: block;
     }
 
     .menu_item_icon
@@ -604,7 +645,7 @@ a:active
     {
         width: 80%;
         max-width: 550px;
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .feature_separate_block
@@ -620,7 +661,11 @@ a:active
     {
         width: 90%;
         max-width: 600px;
-        padding-left: 60px;
+    }
+
+    .feature_icon
+    {
+        height: 150px;
     }
 
     .feature_block
@@ -644,7 +689,7 @@ a:active
 
     .works_container
     {
-        height: 1300px;
+        height: 1400px;
     }
 
     .works_container img
@@ -718,18 +763,12 @@ a:active
 {
     ul
     {
-        margin-left: 0;
-    }
-
-    li
-    {
-        font-size: 8px;
-        padding: 5px 2px;
+        display: none;
     }
 
     h1
     {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     h2
@@ -742,6 +781,11 @@ a:active
         height: 70px;
     }
 
+    .header_block .float_right
+    {
+        float: none;
+    }
+
     .header_block
     {
         width: 310px;
@@ -752,12 +796,6 @@ a:active
         font-size: 12px;
     }
 
-    .header_block_right,
-    .header_block_left
-    {
-        clear: both;
-    }
-
     .header_icons
     {
         font-size: 10px;
@@ -765,10 +803,15 @@ a:active
         margin-left: 15px;
     }
 
+    .humburger
+    {
+        display: block;
+    }
+
     .menu_container
     {
         width: 300px;
-        height: 40px;
+        height: 50px;
     }
 
     .menu_item_icon
@@ -787,7 +830,12 @@ a:active
     {
         width: 90%;
         max-width: 310px;
-        padding: 50px 0;
+        padding: 30px 0;
+    }
+
+    .title_block .button
+    {
+        margin: 10px auto;
     }
 
     .h1_text
@@ -797,18 +845,6 @@ a:active
         line-height: 20px;
     }
 
-    .button
-    {
-        font-size: 10px;
-    }
-
-    .title_block .button
-    {
-        width: 100px;
-        padding: 7px 8px;
-        margin: 20px auto;
-    }
-
     .h2_text
     {
         font-size: 15px;
@@ -816,6 +852,10 @@ a:active
         margin: 15px auto;
     }
 
+    .feature_container
+    {
+        margin: 60px auto;
+    }
 
     .feature_separate_block
     {
@@ -923,6 +963,12 @@ a:active
         height: 100px;
     }
 
+    .footer_block .float_right
+    {
+        float: none;
+    }
+
+
     .footer_block
     {
         width: 95%;
@@ -932,6 +978,7 @@ a:active
     .footer_block p
     {
         font-size: 12px;
+        line-height: 15px;
         padding: 0 2px;
     }
 
@@ -941,22 +988,17 @@ a:active
     }
 }
 
+
 @media only screen and (max-width: 320px)
 {
     ul
     {
-        margin-left: 0;
-    }
-
-    li
-    {
-        font-size: 8px;
-        padding: 5px 2px;
+        display: none;
     }
 
     h1
     {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     h2
@@ -969,6 +1011,11 @@ a:active
         height: 70px;
     }
 
+    .header_block .float_right
+    {
+        float: none;
+    }
+
     .header_block
     {
         width: 310px;
@@ -979,12 +1026,6 @@ a:active
         font-size: 12px;
     }
 
-    .header_block_right,
-    .header_block_left
-    {
-        clear: both;
-    }
-
     .header_icons
     {
         font-size: 10px;
@@ -992,10 +1033,15 @@ a:active
         margin-left: 15px;
     }
 
+    .humburger
+    {
+        display: block;
+    }
+
     .menu_container
     {
         width: 300px;
-        height: 40px;
+        height: 50px;
     }
 
     .menu_item_icon
@@ -1014,32 +1060,19 @@ a:active
     .title_block
     {
         width: 310px;
-        padding: 50px 0;
-    }
-
-    .h1_text
-    {
-        width: 300px;
-        font-size: 15px;
-        margin: 15px 0;
-        line-height: 20px;
-    }
-
-    .feature_container
-    {
-        width: 320px;
-    }
-
-    .button
-    {
-        font-size: 10px;
+        padding: 30px 0;
     }
 
     .title_block .button
     {
-        width: 100px;
-        padding: 7px 8px;
-        margin: 20px auto;
+        margin: 10px auto;
+    }
+
+    .h1_text
+    {
+        font-size: 15px;
+        margin: 15px 0;
+        line-height: 20px;
     }
 
     .h2_text
@@ -1049,10 +1082,14 @@ a:active
         margin: 15px auto;
     }
 
+    .feature_container
+    {
+        margin: 60px auto;
+    }
 
     .feature_separate_block
     {
-        width: 310px;
+        width: 320px;
         margin: 0 auto;
     }
 
@@ -1066,7 +1103,7 @@ a:active
 
     .feature_block
     {
-        width: 300px;
+        width: 310px;
     }
 
     .works_blocks
@@ -1077,14 +1114,13 @@ a:active
     .works_left_block,
     .works_right_block
     {
-        width: 310px;
+        width: 320px;
         margin: 20px auto;
     }
 
     .works_container
     {
-        height: 1050px;
-        width: 320px;
+        height: 1450px;
     }
 
     .works_container img
@@ -1094,7 +1130,7 @@ a:active
 
     .works_block
     {
-        width: 120px;
+        width: 150px;
         margin: 0 10px;
     }
 
@@ -1130,28 +1166,31 @@ a:active
     .menu_bottom_communication_block,
     .menu_bottom_updates_block
     {
-        width: 310px;
+        width: 270px;
         height: auto;
         margin: 10px;
     }
 
     .menu_works_block
     {
-        width: 110px;
-        height: auto;
-        margin: 5px;
+        width: 95px;
     }
 
     .menu_works_block img
     {
-        width: 110px;
-        height: auto;
+        width: 90px;
     }
 
     .footer
     {
         height: 100px;
     }
+
+    .footer_block .float_right
+    {
+        float: none;
+    }
+
 
     .footer_block
     {
@@ -1161,6 +1200,7 @@ a:active
     .footer_block p
     {
         font-size: 12px;
+        line-height: 15px;
         padding: 0 2px;
     }
 
@@ -1169,3 +1209,4 @@ a:active
         clear: both;
     }
 }
+
