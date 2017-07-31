@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro');
 
 html, body
 {
@@ -26,14 +25,16 @@ h1
 h2
 {
     font-family: 'Lato', sans-serif;
-    font-size: 46px;
+    font-size: 44px;
     font-weight: 700;
+    margin: 30px auto;
 }
 
 h3
 {
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 26px;
+    line-height: 0;
     letter-spacing: 1px;
     font-weight: 900;
     color: #506a85;
@@ -50,8 +51,9 @@ p
 
 input
 {
-    width: 200px;
-    padding: 7px;
+    width: 260px;
+    height:30px;
+    padding: 5px;
     opacity: 0.8;
     outline: none;
     font-size: 11px;
@@ -65,12 +67,12 @@ ul
 
 li
 {
-    font-family: sans-serif;
+    font-family:  "Source Sans Pro", sans-serif;
     list-style-type: none;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 800;
     color: #506a85;
-    padding: 15px 13px;
+    padding: 15px 20px;
 }
 
 i
@@ -142,6 +144,7 @@ a:active
 {
     width: 1150px;
     margin: 0 auto;
+    clear: both;
 }
 
 .header_block i
@@ -153,7 +156,17 @@ a:active
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 12px;
-    line-height: 0;
+    line-height: 2;
+}
+
+.header_block_left
+{
+    height: 36px;
+}
+
+.header_block_right
+{
+    height: 36px;
 }
 
 .header_icons
@@ -190,7 +203,7 @@ a:active
 
 .menu_item_icon
 {
-    margin-left: 245px;
+    margin-left: 185px;
 }
 
 .icon-mobile
@@ -211,7 +224,7 @@ a:active
 
 .title_block
 {
-    width: 70%;
+
     max-width: 1000px;
     padding: 280px 0;
     margin: 0 auto;
@@ -232,79 +245,80 @@ a:active
 .title_block .button
 {
     width: 260px;
-    padding: 15px 16px;
-    margin: 40px auto;
+    padding: 22px 17px;
+    margin: 60px auto;
 }
 
 .h1_text
 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     color: #a3b1bf;
     margin: 15px 0;
-    letter-spacing: 1.3px;
+    letter-spacing: 0.3px;
+    line-height: 30px;
 }
 
 .feature_container
 {
     width: 90%;
     max-width: 1000px;
-    margin: 26px auto;
+    margin: 26px auto 100px;
 }
 
 .feature_title_block
 {
-    width: 70%;
+    width: 77%;
     text-align: center;
-    margin: 30px auto;
+    margin: 0 auto;
 }
 
 .h2_text
 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 23px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 32px;
     font-weight: 400;
-    margin: 15px auto;
+    margin: 0 auto;
 }
 
 .feature_separate_block
 {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
+    width: 1150px;
+    margin: 57px auto 0;
+    clear: both;
 }
 
 .feature_block
 {
     width: 33%;
-    max-width: 350px;
+    max-width: 400px;
 }
 
 .feature_icon
 {
-    margin: 19px 10px;
-    height: 286px;
+    margin: 15px 30px;
+    height: 150px;
 }
 
 .works_container
 {
     background: #f2f5f7;
     text-align: center;
-    height: 1250px;
+    height: 1270px;
     clear: both;
 }
 
 .title_works_container
 {
-    padding-top: 50px;
+    padding-top: 90px;
 }
 
 .works_blocks
 {
     width: 95%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 32px auto 0;
 }
 
 .works_big_block
@@ -327,36 +341,35 @@ a:active
 
 .works_block
 {
-    width: 22%;
+    width: 23%;
+    height: 185px;
     max-width: 260px;
-    margin: 0 15px;
+    margin: 30px 15px;
 }
 
 .works_block img
 {
     width: 100%;
-    height: 151px;
-}
-
-.works_blocks p
-{
-    margin-top: 10px;
-    margin-bottom: 20px;
+    height: 190px;
 }
 
 .name_work_text
 {
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 700;
-    margin: 10px auto;
+}
+
+.works_big_block p
+{
+    margin: 20px auto;
 }
 
 .conclusion_container
 {
-    width: 65%;
-    max-width: 700px;
-    margin: 100px auto;
+    width: 70%;
+    max-width: 800px;
+    margin: 127px auto;
     text-align: center;
 }
 
@@ -372,73 +385,76 @@ a:active
     width: 100%;
     background: #2f4052;
     clear: both;
-    height: 250px;
+    height: 370px;
 }
 
 .menu_bottom_block
 {
-    width: 95%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
 .menu_bottom_block p
 {
     color: #72808f;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 15px 0;
 }
 
 .menu_bottom_separate_block
 {
-    width: 230px;
-    margin: 10px;
+    width: 290px;
+    margin: 49px 10px;
 }
 
 .menu_bottom_block h3
 {
     color: white;
+    font-size: 16px;
+    line-height: 35px;
+    clear: both;
 }
 
 .input
 {
-    width: 215px;
+    width: 270px;
     position: relative;
-    height: 10px;
+    height: 40px;
 }
 
 .input_button
 {
     font-size: 11px;
     position: absolute;
+    padding: 5px 0;
     right: 0;
-    padding: 5px 5px;
-    margin: 3px 0;
-    width: 70px;
-}
-
-.menu_bottom_block p
-{
-    font-size: 13px;
-    line-height: 17px;
+    margin: 7px 0;
+    width: 88px;
+    height: 20px;
 }
 
 .menu_works_block
 {
-    width: 95px;
+    width: 125px;
+    margin: 2px;
 }
 
 .menu_works_block img
 {
-    width: 90px;
+    width: 125px;
+    height: 85px;
 }
 
 .works_images_block
 {
-    width: 190px;
+    width: 265px;
 }
 
 .info
 {
-    margin: 5px 0;
+    margin: 0;
 }
 
 .footer_menu a
@@ -450,30 +466,36 @@ a:active
 .footer_menu
 {
     margin: 0;
-}
-
-.footer_menu li
-{
-    margin: 0 2px;
+    width: 423px;
+    color: #72808f;
 }
 
 .footer
 {
+    width: 100%;
     background: #283645;
-    height: 50px;
+    height: 80px;
 }
 
 .footer_block
 {
-    width: 95%;
-    max-width: 1000px;
+    width: 1000%;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
-.footer_block p
+.footer p
 {
+    margin: 24px 0;
+    color: #72808f;
+}
+
+.footer li
+{
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
-    padding: 0 5px;
+    padding: 27px 5px;
+    margin: 0;
 }
 
 @media only screen and (min-width: 830px) and (max-width: 1125px)
@@ -488,6 +510,11 @@ a:active
         margin-left: 80px;
     }
 
+    li
+    {
+        padding: 11px;
+    }
+
     .header_block
     {
         width: 800px;
@@ -500,7 +527,7 @@ a:active
 
     .menu_item_icon
     {
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .title_container
@@ -509,7 +536,7 @@ a:active
         margin-bottom: 60px;
     }
 
-    .title_block
+    .feature_title_block
     {
         width: 70%;
         max-width: 650px;
@@ -532,7 +559,7 @@ a:active
     .feature_icon
     {
         margin: 19px 10px;
-        height: 230px;
+        height: 240px;
     }
 
     .feature_icon
@@ -577,7 +604,7 @@ a:active
 
     .menu_bottom_container
     {
-        height: 400px;
+        height: 500px;
     }
 
     .menu_bottom_block
@@ -590,13 +617,12 @@ a:active
     .menu_bottom_separate_block
     {
         width: 45%;
-        height: 180px;
+        height: 220px;
         margin: 10px;
     }
 
     .input
     {
-        width: 215px;
         position: relative;
         height: 10px;
     }
@@ -614,7 +640,20 @@ a:active
 
     .menu_works_block img
     {
-        width: 90px;
+        width: 95px;
+        height: 75px;
+    }
+
+    .footer
+    {
+        width: 100%;
+    }
+
+
+    .footer_block
+    {
+        width: 100%;
+        max-width: 900px;
     }
 }
 
@@ -627,7 +666,7 @@ a:active
 
     h2
     {
-        font-size: 26px;
+        font-size: 35px;
     }
 
     ul
@@ -741,7 +780,7 @@ a:active
 
     .menu_bottom_container
     {
-        height: 480px;
+        height: 520px;
     }
 
     .menu_bottom_block
@@ -754,7 +793,7 @@ a:active
     .menu_bottom_separate_block
     {
         width: 45%;
-        height: 196px;
+        height: 230px;
         margin: 10px;
     }
 
@@ -793,7 +832,13 @@ a:active
 
     h2
     {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    h3
+    {
+        line-height: 1;
+        margin-bottom: 30px;
     }
 
     .header
@@ -856,6 +901,7 @@ a:active
     .title_block .button
     {
         margin: 10px auto;
+        width: 220px;
     }
 
     .h1_text
@@ -891,6 +937,11 @@ a:active
         padding-left: 10px;
     }
 
+    .feature_icon
+    {
+        height: 50px;
+    }
+
     .feature_title_block
     {
         width: 90%;
@@ -911,12 +962,12 @@ a:active
 
     .works_container
     {
-        height: 1050px;
+        height: 1250px;
     }
 
     .works_container img
     {
-        height: auto;
+        height: 210px;
     }
 
     .works_block
@@ -924,11 +975,12 @@ a:active
         width: 40%;
         max-width: 150px;
         margin: 0 10px;
+        height: 110px;
     }
 
     .works_block img
     {
-        height: 52px;
+        height: 83px;
     }
 
     .conclusion_container
@@ -940,7 +992,7 @@ a:active
 
     .menu_bottom_container
     {
-        height: 900px;
+        height: 1070px;
     }
 
     .menu_bottom_container p
@@ -964,17 +1016,17 @@ a:active
 
     .menu_works_block
     {
-        width: 95px;
+        width: 120px;
     }
 
     .menu_works_block img
     {
-        width: 90px;
+        width: 120px;
     }
 
     .footer
     {
-        height: 100px;
+        height: 80px;
     }
 
     .footer_block .float_right
@@ -1017,7 +1069,18 @@ a:active
 
     h2
     {
-        font-size: 20px;
+        font-size: 24px;
+    }
+
+    h3
+    {
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
+    .main_container
+    {
+        width: 320px;
     }
 
     .header
@@ -1059,11 +1122,6 @@ a:active
         height: 50px;
     }
 
-    .menu_container img
-    {
-        margin-left: 10px;
-    }
-
     .menu_item_icon
     {
         margin-left: 5px;
@@ -1086,6 +1144,7 @@ a:active
     .title_block .button
     {
         margin: 10px auto;
+        width: 220px;
     }
 
     .h1_text
@@ -1120,6 +1179,11 @@ a:active
         padding-left: 10px;
     }
 
+    .feature_icon
+    {
+        height: 50px;
+    }
+
     .feature_title_block
     {
         width: 320px;
@@ -1127,8 +1191,8 @@ a:active
 
     .works_blocks
     {
-        width: 300px;
-        margin: 0 auto;
+        width: 320px;
+        max-width: 310px;
     }
 
     .works_big_block
@@ -1139,24 +1203,24 @@ a:active
 
     .works_container
     {
-        width: 320px;
         height: 1450px;
     }
 
     .works_container img
     {
-        height: auto;
+        height: 210px;
     }
 
     .works_block
     {
         width: 150px;
         margin: 0 10px;
+        height: 110px;
     }
 
     .works_block img
     {
-        height: auto;
+        height: 83px;
     }
 
     .conclusion_container
@@ -1168,7 +1232,7 @@ a:active
     .menu_bottom_container
     {
         width: 320px;
-        height: 900px;
+        height: 1070px;
     }
 
     .menu_bottom_container p
@@ -1184,25 +1248,25 @@ a:active
 
     .menu_bottom_separate_block
     {
-        width: 270px;
+        width: 320px;
         height: auto;
         margin: 10px;
     }
 
     .menu_works_block
     {
-        width: 95px;
+        width: 120px;
     }
 
     .menu_works_block img
     {
-        width: 90px;
+        width: 120px;
     }
 
     .footer
     {
         width: 320px;
-        height: 100px;
+        height: 80px;
     }
 
     .footer_block .float_right
@@ -1213,7 +1277,7 @@ a:active
 
     .footer_block
     {
-        width: 320px;
+        width: 310px;
     }
 
     .footer_block p
