@@ -1,0 +1,509 @@
+/*# sourceMappingURL=style.css.map */
+
+@import "fonts.scss";
+@import "colors";
+
+html, body
+{
+  margin: 0;
+  padding: 0;
+  font-family: $text_font;
+}
+
+body
+{
+  background: $white;
+}
+
+h1
+{
+  font-family: $title_font;
+  font-size: 77px;
+  font-weight: 900;
+  letter-spacing: 4.7px;
+  color: $white;
+  margin: 0 4px;
+}
+
+h2
+{
+  font-family: $title_font;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 26px auto;
+}
+
+h3
+{
+  font-family: $title_font;
+  font-size: 26px;
+  line-height: 0;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: $text_color;
+}
+
+p
+{
+  font-family: $text_font;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  color: $text_color;
+}
+
+input
+{
+  font-family: $text_font;
+  width: 260px;
+  height: 30px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: $input_color;
+  color: $h1_text_color;
+  border: none;
+  border-radius: 5px;
+}
+
+li
+{
+  font-family:  $text_font;
+  list-style-type: none;
+  font-size: 15px;
+  font-weight: 800;
+  color: $text_color;
+}
+
+i
+{
+  font-size: 12px;
+}
+
+a
+{
+  color: $text_color;
+  text-decoration: none;
+}
+
+a:visited
+{
+  color: $text_color;
+}
+
+a:active
+{
+  color: $text_color;
+}
+
+.main_container
+{
+  color: $text_color;
+}
+
+.title_button
+{
+  font-family: $text_font;
+  text-transform: uppercase;
+  border-bottom: 2px solid $button_border_color;
+  background-color: $button_background;
+  border-radius: 5px;
+  display: block;
+  color: $white;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.header
+{
+  background: $header_text_color;
+  height: 40px;
+  width: 100%;
+}
+
+.header_block p
+{
+  font-family: $text_font;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.header_icons
+{
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.header_icons i
+{
+  padding: 0 3px;
+}
+
+.humburger
+{
+  width: 35px;
+  height: 35px;
+  display: none;
+  color: $title_background_color;
+  background: $header_text_color;
+  border-radius: 5px;
+}
+
+.menu_item_icon
+{
+  margin-left: 14%;
+}
+
+.icon-mobile
+{
+  font-size: 20px;
+}
+
+.menu_container
+{
+  height: 113px;
+  position: relative;
+  top: 37px;
+}
+
+.menu
+{
+  top: 2px;
+}
+
+.title_container
+{
+  background: $title_background_color url(../image/background.png) no-repeat;
+  background-size: auto 100%;
+  height: 880px;
+  background-origin: border-box;
+  width: 100%;
+}
+
+.title_block
+{
+  position: relative;
+  top: 281px;
+}
+
+
+.h1_text
+{
+  font-family: $text_font;
+  font-size: 24px;
+  color: $h1_text_color;
+  margin: 15px 0;
+  line-height: 32px;
+}
+
+
+.h2_text
+{
+  font-family: $text_font;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+
+.feature_block_p
+{
+  margin: 39px 0;
+}
+
+.feature_icon
+{
+  margin: 15px 37px 15px 0;
+  height: 215px;
+}
+
+.works_container
+{
+  background: $works_container_background;
+  text-align: center;
+  height: 1270px;
+  clear: both;
+}
+
+.title_works_container
+{
+  padding-top: 95px;
+}
+
+.works_blocks
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: 32px auto 0;
+}
+
+.works_big_block
+{
+  background: $white;
+  width: 48%;
+  max-width: 570px;
+  margin: 42px 15px;
+  height: 500px;
+}
+
+.works_big_block img
+{
+  width: 48%;
+  max-width: 570px;
+  margin-bottom: 21px;
+}
+
+.works_container img
+{
+  width: 100%;
+}
+
+.works_block
+{
+  width: 23%;
+  max-width: 270px;
+  height: 185px;
+  margin: 40px 15px;
+}
+
+.works_block img
+{
+  width: 100%;
+  height: 185px;
+}
+
+.name_work_text
+{
+  font-family: $title_font;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.identity
+{
+  font-size: 14px;
+}
+
+.works_big_block p
+{
+  margin: 5px auto;
+}
+
+.conclusion_container
+{
+  width: 70%;
+  max-width: 800px;
+  margin: 123px auto 130px;
+  text-align: center;
+}
+
+.conclusion_container .button
+{
+  width: 150px;
+  padding: 13px 0;
+  margin: 36px auto;
+}
+
+.menu_bottom_container
+{
+  width: 100%;
+  background: $menu_bottom_background;
+  clear: both;
+  height: 364px;
+}
+
+.menu_bottom_block
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu_bottom_block p
+{
+  color: $footer_text;
+  font-size: 14px;
+  line-height: 22px;
+  margin: 15px 0;
+}
+
+.menu_bottom_separate_block
+{
+  width: 270px;
+  margin: 46px 15px;
+}
+
+.menu_bottom_separate_block a
+{
+  font-family: $title_font;
+  font-size: 15px;
+  font-weight: 900;
+  color: $footer_text;
+  text-decoration: none;
+
+  a:visited
+  {
+    color: $footer_text;
+  }
+}
+
+.menu_bottom_separate_block .input_button
+{
+  color: $white;
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.menu_bottom_block h3
+{
+  color: white;
+  font-size: 16px;
+  line-height: 35px;
+  clear: both;
+}
+
+.menu_bottom_block .menu_bottom_right
+{
+  line-height: 0;
+  margin: 34px 0 27px;
+}
+
+.input
+{
+  width: 274px;
+  position: relative;
+  height: 40px;
+}
+
+.input_button
+{
+  font-size: 11px;
+  position: absolute;
+  padding: 5px 0;
+  right: 8px;
+  margin: 7px 0;
+  width: 88px;
+  height: 20px;
+  line-height: 18px;
+}
+
+.menu_works_block
+{
+  width: 125px;
+  height: 85px;
+  margin: 2px;
+}
+
+.menu_works_block img
+{
+  width: 125px;
+  height: 85px;
+}
+
+.works_images_block
+{
+  width: 265px;
+}
+
+.menu_bottom_block .menu_bottom_left
+{
+  margin: 15px 0;
+}
+
+.menu_bottom_block .info
+{
+  margin: 0;
+}
+
+.footer_menu a
+{
+  font-size: 15px;
+  font-weight: 700;
+  color: $footer_text;
+}
+
+.menu_bottom_item
+{
+  width: 600px;
+}
+
+.footer_menu
+{
+  margin: 0;
+  width: 500px;
+  color: $footer_text;
+}
+
+.footer_left_block
+{
+  margin: 7px 15px;
+}
+
+.footer
+{
+  width: 100%;
+  background: $footer_background;
+  height: 86px;
+}
+
+.footer_block
+{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer p
+{
+  margin: 32px 0;
+  font-size: 15px;
+  color: $menu_bottom_text;
+  line-height: 0;
+}
+
+.footer li
+{
+  font-family: $text_font;
+  font-size: 14px;
+  padding: 30px 5px;
+  margin: 0;
+  color: $menu_bottom_text;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1025px)
+{
+  .humburger
+  {
+    display: block;
+  }
+
+  .menu
+  {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px)
+{
+  .header_block p
+  {
+    font-size: 12px;
+    line-height: 12px;
+    clear: both;
+  }
+
+  .header
+  {
+    height: 70px;
+  }
+
+  .humburger
+  {
+    display: block;
+  }
+
+  .menu
+  {
+    display: none;
+  }
+}
