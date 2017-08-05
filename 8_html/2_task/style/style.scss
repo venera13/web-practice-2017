@@ -7,7 +7,7 @@ html, body
 {
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: $text_font;
 }
 
 body
@@ -58,10 +58,10 @@ input
   width: 260px;
   height: 30px;
   padding: 5px;
-  opacity: 0.3;
-  outline: none;
   font-size: 14px;
-  color: white;
+  background-color: $input_color;
+  color: $h1_text_color;
+  border: none;
   border-radius: 5px;
 }
 
@@ -218,13 +218,12 @@ a:active
 
 .menu_item_icon
 {
-  margin-left: 20%;
+  margin-left: 15%;
 }
 
 .icon-mobile
 {
   font-size: 20px;
-  line-height: 1;
 }
 
 .title_container
@@ -446,6 +445,7 @@ a:active
 {
   color: $white;
   font-size: 12px;
+  margin: 4px 0;
 }
 
 .menu_bottom_block h3
@@ -464,7 +464,7 @@ a:active
 
 .input
 {
-  width: 260px;
+  width: 274px;
   position: relative;
   height: 40px;
 }
@@ -474,7 +474,7 @@ a:active
   font-size: 11px;
   position: absolute;
   padding: 5px 0;
-  right: -7px;
+  right: 8px;
   margin: 7px 0;
   width: 88px;
   height: 20px;
@@ -516,10 +516,15 @@ a:active
   color: $footer_text;
 }
 
+.menu_bottom_item
+{
+  width: 600px;
+}
+
 .footer_menu
 {
   margin: 0;
-  width: 387px;
+  width: 500px;
   color: $footer_text;
 }
 
@@ -552,11 +557,11 @@ a:active
 
 .footer li
 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $text_font;
   font-size: 14px;
   padding: 30px 5px;
   margin: 0;
-  color: $menu_bottom_text
+  color: $menu_bottom_text;
 }
 
 @media only screen and (min-width: 1125px) and (max-width: 1220px)
@@ -807,11 +812,12 @@ a:active
     width: 47%;
     max-width: 340px;
     margin: 40px 15px;
+    height: 345px;
   }
 
   .works_container
   {
-    height: 1070px;
+    height: 920px;
   }
 
   .works_container img
@@ -1293,7 +1299,6 @@ a:active
   }
 }
 
-
 @media only screen and (max-width: 320px)
 {
   ul
@@ -1303,7 +1308,7 @@ a:active
 
   h1
   {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   h2
@@ -1313,18 +1318,12 @@ a:active
 
   h3
   {
-    line-height: 1;
     margin-bottom: 30px;
-  }
-
-  .main_container
-  {
-    width: 320px;
   }
 
   .header
   {
-    width: 320px;
+    width: 360px;
     height: 70px;
   }
 
@@ -1374,7 +1373,7 @@ a:active
 
   .title_container
   {
-    width: 320px;
+    width: 360px;
     height: 300px;
     margin-bottom: 30px;
   }
@@ -1437,17 +1436,24 @@ a:active
   {
     width: 320px;
     max-width: 310px;
+
+    .float_left
+    {
+      float: none;
+    }
   }
 
   .works_big_block
   {
     width: 300px;
     margin: 20px auto;
+    height: 365px;
   }
 
   .works_container
   {
     height: 1850px;
+    width: 360px;
   }
 
   .works_container img
@@ -1458,7 +1464,7 @@ a:active
   .works_block
   {
     width: 150px;
-    margin: 0 10px;
+    margin: 0 auto;
     height: 110px;
   }
 
@@ -1475,7 +1481,7 @@ a:active
 
   .menu_bottom_container
   {
-    width: 320px;
+    width: 360px;
     height: 1070px;
   }
 
@@ -1509,15 +1515,14 @@ a:active
 
   .footer
   {
-    width: 320px;
-    height: 80px;
+    width: 360px;
+    height: 93px;
   }
 
   .footer_block .float_right
   {
     float: none;
   }
-
 
   .footer_block
   {
@@ -1536,5 +1541,6 @@ a:active
     clear: both;
   }
 }
+
 
 
