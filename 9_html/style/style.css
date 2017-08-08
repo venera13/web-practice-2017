@@ -63,7 +63,6 @@ a:active {
 .title_button {
   font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
-  border-bottom: 2px solid #00a085;
   background-color: #00bc9c;
   border-radius: 5px;
   display: block;
@@ -78,11 +77,11 @@ a:active {
 .header_block p {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 12px;
-  line-height: 40px; }
+  padding: 6px 0;
+  -webkit-margin-after: 0; }
 
 .header_icons {
-  font-size: 13px;
-  line-height: 40px; }
+  font-size: 13px; }
 
 .header_icons i {
   padding: 0 3px; }
@@ -98,24 +97,21 @@ a:active {
   font-size: 20px; }
 
 .menu_container {
-  height: 77px;
-  position: relative;
-  top: 18px; }
+  padding: 25px 0 21px; }
+  .menu_container img {
+    padding-top: 12px; }
 
 .menu {
-  top: 2px; }
+  padding: 15px 0; }
 
 .title_container {
   background: #3f3c67 url(../image/background.png) no-repeat;
   background-size: auto 100%;
-  height: 887px;
-  background-origin: border-box;
-  position: relative;
-  top: 11px; }
+  height: 880px;
+  background-origin: border-box; }
 
 .title_block {
-  position: relative;
-  top: 281px; }
+  padding: 275px 0; }
 
 .title_button_block {
   margin-top: 56px; }
@@ -134,18 +130,14 @@ a:active {
   font-weight: 400;
   margin-bottom: 75px; }
 
-.feature_container {
-  height: 680px; }
-
 .feature_block {
-  position: relative;
-  top: 126px; }
+  padding: 115px 15px 90px; }
 
 .feature_block_p {
-  margin: 39px 0; }
+  margin: 22px 0; }
 
 .feature_icon {
-  margin: 0 37px 15px 0; }
+  margin: 0 37px 147px 0; }
 
 .title_works_container {
   padding-top: 95px; }
@@ -155,12 +147,10 @@ a:active {
 
 .works_big_block {
   background: #ffffff;
-  height: 500px;
   margin-bottom: 82px; }
 
 .works_container {
   background: #f2f5f7;
-  height: 1270px;
   clear: both; }
   .works_container img {
     margin-bottom: 30px; }
@@ -168,18 +158,15 @@ a:active {
     padding: 0; }
 
 .works_container_block {
-  position: relative;
-  top: 118px; }
+  padding-top: 118px;
+  padding-bottom: 160px; }
 
 .works_row .columns {
   padding: 0 15px; }
 
-.works_block {
-  height: 185px; }
-
 .works_block img {
   width: 100%;
-  height: 185px; }
+  height: auto; }
 
 .name_work_text {
   font-family: "Lato", sans-serif;
@@ -187,39 +174,35 @@ a:active {
   font-weight: 700; }
 
 .identity {
-  font-size: 14px; }
+  font-size: 14px;
+  padding-bottom: 20px; }
 
 .works_big_block p {
   margin-bottom: 5px; }
 
-.conclusion_container {
-  height: 483px; }
-  .conclusion_container .h2_text {
-    margin-bottom: 36px; }
+.conclusion_container .h2_text {
+  margin-bottom: 36px; }
 
 .conclusion_block {
-  position: relative;
-  top: 119px; }
+  padding: 120px 0 131px; }
 
 .conclusion_button {
-  padding: 13px 0;
+  padding: 15px 0;
   width: 150px;
-  height: 50px;
   margin: 0 auto; }
 
 .menu_bottom_container {
-  background: #2f4052;
-  height: 364px; }
+  background: #2f4052; }
   .menu_bottom_container p {
     color: #72808f;
     font-size: 14px;
     line-height: 22px;
-    margin: 15px 0; }
+    margin: 18px 0; }
   .menu_bottom_container h3 {
     color: white;
     font-size: 16px;
-    line-height: 35px;
-    clear: both; }
+    clear: both;
+    margin-bottom: 19px; }
   .menu_bottom_container a {
     font-family: "Lato", sans-serif;
     font-size: 15px;
@@ -228,6 +211,8 @@ a:active {
     text-decoration: none; }
     .menu_bottom_container a a:visited {
       color: #72808f; }
+  .menu_bottom_container .info {
+    margin: 0; }
   .menu_bottom_container .input_button {
     color: #ffffff;
     font-size: 12px;
@@ -241,9 +226,21 @@ a:active {
   .menu_bottom_container .columns {
     padding: 0.5rem; }
 
+.left_block h3 {
+  margin-bottom: 25px; }
+
 .menu_bottom_block {
-  position: relative;
-  top: 63px; }
+  padding: 65px 0 43px; }
+  .menu_bottom_block img {
+    max-width: 100%;
+    max-height: 100%; }
+  .menu_bottom_block .small-6 {
+    max-width: 270px; }
+
+.latest_works_block h3 {
+  margin-bottom: 23px; }
+.latest_works_block .columns {
+  padding: 0.15rem; }
 
 .footer_input {
   height: 40px;
@@ -275,8 +272,7 @@ a:active {
   .footer p {
     margin: 32px 0;
     font-size: 15px;
-    color: #72808f;
-    line-height: 0; }
+    color: #72808f; }
   .footer li {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 14px;
@@ -284,20 +280,27 @@ a:active {
     margin: 0;
     color: #72808f; }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 47px; }
+
+  .feature_icon {
+    margin: 0 37px 175px 0; } }
 @media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 47px; }
+
+  .feature_icon {
+    margin: 0 37px 175px 0; }
+
   .row {
     width: 320px; }
 
   .header_block .float-left {
     float: none; }
-  .header_block p {
-    font-size: 10px;
-    line-height: 10px; }
 
-  .header {
-    height: 70px; }
-    .header .columns {
-      padding: 5px 5px 0; }
+  .header .columns {
+    padding: 5px 5px 0; }
 
   .header_icons {
     font-size: 10px; } }

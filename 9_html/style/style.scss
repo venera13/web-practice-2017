@@ -91,7 +91,6 @@ a:active
 {
   font-family: $text_font;
   text-transform: uppercase;
-  border-bottom: 2px solid $button_border_color;
   background-color: $button_background;
   border-radius: 5px;
   display: block;
@@ -110,13 +109,13 @@ a:active
 {
   font-family: $text_font;
   font-size: 12px;
-  line-height: 40px;
+  padding: 6px 0;
+  -webkit-margin-after: 0;
 }
 
 .header_icons
 {
   font-size: 13px;
-  line-height: 40px;
 }
 
 .header_icons i
@@ -140,30 +139,30 @@ a:active
 
 .menu_container
 {
-  height: 77px;
-  position: relative;
-  top: 18px;
+  padding: 25px 0 21px;
+
+  img
+  {
+    padding-top: 12px;
+  }
 }
 
 .menu
 {
-  top: 2px;
+  padding: 15px 0;
 }
 
 .title_container
 {
   background: $title_background_color url(../image/background.png) no-repeat;
   background-size: auto 100%;
-  height: 887px;
+  height: 880px;
   background-origin: border-box;
-  position: relative;
-  top: 11px;
 }
 
 .title_block
 {
-  position: relative;
-  top: 281px;
+  padding: 275px 0;
 }
 
 .title_button_block
@@ -189,25 +188,19 @@ a:active
   margin-bottom: 75px;
 }
 
-.feature_container
-{
-  height: 680px;
-}
-
 .feature_block
 {
-  position: relative;
-  top: 126px;
+  padding: 115px 15px 90px;
 }
 
 .feature_block_p
 {
-  margin: 39px 0;
+  margin: 22px 0;
 }
 
 .feature_icon
 {
-  margin: 0 37px 15px 0;
+  margin: 0 37px 147px 0;
 }
 
 .title_works_container
@@ -223,14 +216,12 @@ a:active
 .works_big_block
 {
   background: $white;
-  height: 500px;
   margin-bottom: 82px;
 }
 
 .works_container
 {
   background: $works_container_background;
-  height: 1270px;
   clear: both;
 
   img
@@ -246,8 +237,8 @@ a:active
 
 .works_container_block
 {
-  position: relative;
-  top: 118px;
+  padding-top: 118px;
+  padding-bottom: 160px;
 }
 
 .works_row
@@ -258,15 +249,10 @@ a:active
   }
 }
 
-.works_block
-{
-  height: 185px;
-}
-
 .works_block img
 {
   width: 100%;
-  height: 185px;
+  height: auto;
 }
 
 .name_work_text
@@ -279,6 +265,7 @@ a:active
 .identity
 {
   font-size: 14px;
+  padding-bottom: 20px;
 }
 
 .works_big_block p
@@ -288,8 +275,6 @@ a:active
 
 .conclusion_container
 {
-  height: 483px;
-
   .h2_text
   {
     margin-bottom: 36px;
@@ -298,37 +283,34 @@ a:active
 
 .conclusion_block
 {
-  position: relative;
-  top: 119px;
+  padding: 120px 0 131px;
 }
 
 .conclusion_button
 {
-  padding: 13px 0;
+  padding: 15px 0;
   width: 150px;
-  height: 50px;
   margin: 0 auto;
 }
 
 .menu_bottom_container
 {
   background: $menu_bottom_background;
-  height: 364px;
 
   p
   {
     color: $footer_text;
     font-size: 14px;
     line-height: 22px;
-    margin: 15px 0;
+    margin: 18px 0;
   }
 
   h3
   {
     color: white;
     font-size: 16px;
-    line-height: 35px;
     clear: both;
+    margin-bottom: 19px;
   }
 
   a
@@ -343,6 +325,11 @@ a:active
     {
       color: $footer_text;
     }
+  }
+
+  .info
+  {
+    margin: 0;
   }
 
   .input_button
@@ -364,10 +351,41 @@ a:active
   }
 }
 
+.left_block
+{
+  h3
+  {
+    margin-bottom: 25px;
+  }
+}
+
 .menu_bottom_block
 {
-  position: relative;
-  top: 63px;
+  padding: 65px 0 43px;
+
+  img
+  {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .small-6
+  {
+    max-width: 270px;
+  }
+}
+
+.latest_works_block
+{
+  h3
+  {
+    margin-bottom: 23px;
+  }
+
+  .columns
+  {
+    padding: 0.15rem;
+  }
 }
 
 .footer_input
@@ -414,7 +432,6 @@ a:active
     margin: 32px 0;
     font-size: 15px;
     color: $menu_bottom_text;
-    line-height: 0;
   }
 
   li
@@ -427,8 +444,31 @@ a:active
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px)
+{
+  h1
+  {
+    font-size: 47px;
+  }
+
+  .feature_icon
+  {
+    margin: 0 37px 175px 0;
+  }
+}
+
 @media only screen and (max-width: 320px)
 {
+  h1
+  {
+    font-size: 47px;
+  }
+
+  .feature_icon
+  {
+    margin: 0 37px 175px 0;
+  }
+
   .row
   {
     width: 320px;
@@ -440,18 +480,10 @@ a:active
     {
       float: none;
     }
-    p
-
-    {
-      font-size: 10px;
-      line-height: 10px;
-    }
   }
 
   .header
   {
-    height: 70px;
-
     .columns
     {
       padding: 5px 5px 0;
