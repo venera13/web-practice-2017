@@ -134,7 +134,7 @@ a:active
 
 .icon-mobile
 {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .menu_container
@@ -185,12 +185,17 @@ a:active
   font-size: 22px;
   line-height: 34px;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 77px;
 }
 
 .feature_block
 {
-  padding: 115px 15px 90px;
+  padding: 115px 15px 0;
+}
+
+.feature_bottom_blocks
+{
+  margin-bottom: 80px;
 }
 
 .feature_block_p
@@ -337,7 +342,7 @@ a:active
     font-size: 12px;
     position: absolute;
     padding: 5px 0;
-    right: 8px;
+    right: 11px;
     margin: 5px 0;
     width: 88px;
     height: 30px;
@@ -466,6 +471,14 @@ a:active
   .feature_icon
   {
     margin: 0 37px 175px 0;
+  }
+
+  .menu_bottom_container
+  {
+    .columns
+    {
+      padding: 0.07rem;
+    }
   }
 
   .row
