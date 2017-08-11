@@ -72,25 +72,14 @@ a
     text-decoration: none;
 }
 
+body.is-reveal-open
+{
+    overflow: auto;
+}
+
 .demo-toggle-title
 {
     margin-top: 0.5rem;
-}
-
-.top-bar
-{
-    width: 100%;
-    height: 37px;
-}
-
-.top-bar .menu
-{
-    padding: 0;
-
-    .active
-    {
-        font-weight: bold;
-    }
 }
 
 .main_container
@@ -296,6 +285,11 @@ a
         max-width: 100%;
         max-height: 100%;
     }
+}
+
+.orbit-container, .modal
+{
+    outline: none;
 }
 
 .orbit-next, .orbit-previous
@@ -605,7 +599,7 @@ a
 {
     .feature_icon
     {
-        margin: 0 37px 150px 0;
+        margin: 0 37px 85px 0;
     }
 }
 
@@ -621,9 +615,19 @@ a
         font-size: 36px;
     }
 
+    .header_block_left .icon-mail
+    {
+        padding-right: 7px;
+    }
+
     .feature_block
     {
         padding: 80px 15px 0;
+    }
+
+    .h1_text
+    {
+        padding: 0 15px;
     }
 
     .h2_text
@@ -736,6 +740,11 @@ a
     .header_block p
     {
         font-size: 10px;
+    }
+
+    .header_block_left .icon-mail
+    {
+        padding-right: 7px;
     }
 
     .h1_text
