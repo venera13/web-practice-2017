@@ -5,35 +5,54 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reen</title>
-    <link rel="stylesheet" href="css/style/foundation.min.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="scss/style.css">
-    <link rel="stylesheet" href="fontello/css/fontello.css">
+    <link rel="stylesheet" href="fontello/css/inst.css">
   </head>
   <body>
-    <div class="main_container">
+    <div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+      <ul class="menu vertical">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">PAGES</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">MEGA MENU</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="main_container off-canvas-content" data-off-canvas-content>
       <div class="expanded row header">
         <div class="row">
           <div class="small-6 large-10 columns header_block">
             <div>
-              <p class="float-left"><i class="icon-mail"></i>info@reen.com</p>
+              <p class="float-left header_block_left"><i class="icon-mail"></i>info@reen.com</p>
               <p class="float-left"><i class="icon-mobile"></i>+00 (123) 456 78 90</p>
             </div>
           </div>
-          <div class="small-6 large-2 columns text-right">
-            <a href="#" class="header_icons"><i class="icon-facebook"></i></a>
-            <a href="#" class="header_icons"><i class="icon-gplus-1"></i></a>
-            <a href="#" class="header_icons"><i class="icon-twitter"></i></a>
-            <a href="#" class="header_icons"><i class="icon-pinterest"></i></a>
-            <a href="#" class="header_icons"><i class="icon-dribbble"></i></a>
+          <div class="small-6 large-2 columns text-right header_icons">
+            <a href="#"><i class="icon-facebook"></i></a>
+            <a href="#"><i class="icon-gplus-1"></i></a>
+            <a href="#"><i class="icon-twitter"></i></a>
+            <a href="#"><i class="icon-pinterest"></i></a>
+            <a href="#"><i class="icon-dribbble"></i></a>
           </div>
         </div>
       </div>
       <div class="row menu_container">
         <div class="small-10 medium-3 larget-3 columns float-left logo">
-          <img src="image/reen-logo.png" alt="Logo REEN">
+          <img data-open="modal" src="image/reen-logo.png" alt="Logo REEN">
+          <div class="reveal" id="modal" data-reveal>
+            <p>
+              REEN ia a high-quality solution for those who want a beautiful website in no time.
+            </p>
+            <button class="close-button" data-close aria-label="Close reveal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
         </div>
         <div class="small-2 columns show-for-small hide-for-large float-right">
-          <button class="humburger">&#9776;</button>
+          <button class="humburger" data-toggle="offCanvas">&#9776;</button>
         </div>
         <div class="large-9 columns show-for-large">
           <ul class="menu">
@@ -70,7 +89,7 @@
       </div>
       <div class="feature_container">
         <div class="row feature_block">
-          <div class="small-12 medium-8 medium-offset-2 columns text-center">
+          <div class="small-12 large-8 large-offset-2 columns text-center">
             <h2>Beautiful. Clean. Responsive.</h2>
             <p class="h2_text text-center">
               REEN ia a high-quality solution for those who want a beautiful website in no time.
@@ -115,7 +134,7 @@
       <div class="expanded row works_container">
         <div class="works_container_block">
           <div class="row">
-            <div class="small-12 medium-8 medium-offset-2 columns text-center">
+            <div class="small-12 columns text-center">
               <h2>Check out our latest works</h2>
               <p class="h2_text">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</p>
             </div>
@@ -124,7 +143,7 @@
             <div class="small-12 medium-6 columns works_row">
               <div class="works_big_block float-left small-12 columns text-center">
                 <div class="small-12">
-                   <img src="image/grand-motel.png" alt="Grand Motel">
+                  <img src="image/grand-motel.png" alt="Grand Motel">
                 </div>
                 <p class="name_work_text">Grand Motel gets an identity brushup</p>
                 <p class="identity">Identity</p>
@@ -139,26 +158,83 @@
                 <p class="identity">Identity</p>
               </div>
             </div>
-            <div class="row works_row">
-              <div class="float-left small-6 medium-3 columns">
-                <img src="image/business-card.png" alt="Business card">
-              </div>
-              <div class="float-left small-6 medium-3 columns">
-                <img src="image/plate.png" alt="Plate">
-              </div>
-              <div class="float-left small-6 medium-3 columns">
-                <img src="image/sticker.png" alt="Sticker">
-              </div>
-              <div class="float-left small-6 medium-3 columns">
-                <img src="image/signwall.jpg" alt="Signwall">
+            <div class="row">
+              <div class="columns orbit_columns">
+                <div class="orbit" role="region" aria-label="Favorite Text Ever" data-orbit>
+                  <ul class="orbit-container">
+                    <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
+                    <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
+                    <li class="orbit-slide">
+                      <div class="docs-example-orbit-slide">
+                        <div class="row works_bottom_block">
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/sticker.png" alt="Sticker">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/signwall.jpg" alt="Signwall">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/business-card.png" alt="Business card">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/plate.png" alt="Plate">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="is-active orbit-slide">
+                      <div class="docs-example-orbit-slide">
+                        <div class="row works_bottom_block">
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/sticker.png" alt="Sticker">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/signwall.jpg" alt="Signwall">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/business-card.png" alt="Business card">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/plate.png" alt="Plate">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="orbit-slide">
+                      <div class="docs-example-orbit-slide">
+                        <div class="row works_bottom_block">
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/sticker.png" alt="Sticker">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/signwall.jpg" alt="Signwall">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/business-card.png" alt="Business card">
+                          </div>
+                          <div class="float-left small-6 medium-3 columns">
+                            <img src="image/plate.png" alt="Plate">
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <nav class="orbit-bullets">
+                    <button data-slide="0"><span class="show-for-sr">First slide details.</span></button>
+                    <button class="is-active" data-slide="1">
+                      <span class="show-for-sr">Second slide details.</span>
+                      <span class="show-for-sr">Current Slide</span>
+                    </button>
+                    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                  </nav>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
       <div class="row conclusion_container">
-          <div class="small-12 medium-8 medium-offset-2 columns text-center conclusion_block">
+          <div class="small-12 large-8 large-offset-2 columns text-center conclusion_block">
             <h2>Want to work with us?</h2>
             <p class="h2_text">
               Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.
@@ -168,9 +244,9 @@
           </div>
       </div>
       <div class="menu_bottom_container expanded row">
-        <div class="menu_bottom_block">
+        <div class="menu_bottom_blocks">
           <div class="row">
-            <div class="small-12 medium-6 large-3 columns float-left left_block">
+            <div class="small-12 medium-6 large-3 columns float-left left_block menu_bottom_block">
               <h3>WHO WE ARE</h3>
               <div>
                 <img src="image/reen-logo-light.png" alt="Логотип REEN">
@@ -183,24 +259,26 @@
                 More about us &rarr;
               </a>
             </div>
-            <div class="small-12 medium-6 large-3 columns float-left latest_works_block">
+            <div class="small-12 medium-6 large-3 columns float-left latest_works_block menu_bottom_block">
               <h3>LATEST WORKS</h3>
               <div class="row">
-                <div class="small-6 columns float_left">
-                  <img src="image/grand-motel.png" alt="Grand Motel">
-                </div>
-                <div class="small-6 columns float_left">
-                  <img src="image/sticker.png" alt="Sticker">
-                </div>
-                <div class="small-6 columns float_left">
-                  <img src="image/plate.png" alt="Plate">
-                </div>
-                <div class="small-6 columns float_left">
-                  <img src="image/signwall.jpg" alt="Signwall">
+                <div class="bottom_image_block">
+                  <div class="small-6 columns float_left">
+                    <img src="image/grand-motel.png" alt="Grand Motel">
+                  </div>
+                  <div class="small-6 columns float_left">
+                    <img src="image/sticker.png" alt="Sticker">
+                  </div>
+                  <div class="small-6 columns float_left">
+                    <img src="image/plate.png" alt="Plate">
+                  </div>
+                  <div class="small-6 columns float_left">
+                    <img src="image/signwall.jpg" alt="Signwall">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="small-12 medium-6 large-3 columns float-left">
+            <div class="small-12 medium-6 large-3 columns float-left menu_bottom_block">
               <h3 class="menu_bottom_right">GET IN TOUCH</h3>
               <p>
                 Doloreiur quia commolu ptatemp dolupta oreptreum tibusam eumenis et consent
@@ -210,7 +288,7 @@
               <p class="info"><i class="icon-mobile"></i>+00 (123) 456 78 90</p>
               <p class="info"><i class="icon-mail"></i>info@reeb.com</p>
             </div>
-            <div class="small-12 medium-6 large-3 columns float-left">
+            <div class="small-12 medium-6 large-3 columns float-left menu_bottom_block">
              <h3 class="menu_bottom_right">FREE UPDATES</h3>
               <p>Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
               <div class="row">
@@ -246,5 +324,10 @@
         </div>
       </div>
     </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
   </body>
 </html>
