@@ -123,7 +123,7 @@ body.is-reveal-open {
 .title-block {
   padding: 275px 0; }
 
-.title-button-block__title-button {
+.title-button-block__button {
   margin-top: 56px; }
 
 .h1_text {
@@ -435,7 +435,7 @@ body.is-reveal-open {
   .h2_text {
     font-size: 18px; }
 
-  .title-button-block__title-button {
+  .title-button-block__button {
     font-size: 15px; }
 
   .feature-icon {
@@ -471,7 +471,7 @@ body.is-reveal-open {
   .row {
     width: 100%; }
 
-  .title-button-block__title-button {
+  .title-button-block__button {
     font-size: 15px; }
 
   .header-block_icons {
