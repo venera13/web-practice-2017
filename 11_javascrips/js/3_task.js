@@ -1,11 +1,13 @@
-var i=2;
-while ( i<=10 )
+var FROM_NUMBER = 2;
+var TO_NUMBER = 10;
+var STEP_NUMBER = 2;
+while (i <= TO_NUMBER)
 {
-    console.log ( i );
-    i += 2;
+    console.log( i );
+    i += STEP_NUMBER;
 }
 
-for ( j=2; j<=10; j += 2 )
+for (var j = FROM_NUMBER; j <= TO_NUMBER; j += STEP_NUMBER)
 {
-    console.log ( j );
+    console.log( j );
 }

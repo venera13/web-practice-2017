@@ -2,11 +2,10 @@ var PLUS_OPERATOR = "+";
 var MINUS_OPERATOR = "-";
 var MULTIPLICATION_OPERATOR = "*";
 var DIVISION_OPERATOR = "/";
-var DEGREE_OPERATOR = "^";
+var SQRT_OPERATOR = "^";
 
 function askDigit()
 {
-    //TODO:: my code here
     var operand = +prompt("Введите числo");
     //Возвращает число, введенный пользователем
     return operand;
@@ -14,7 +13,6 @@ function askDigit()
 
 function askOperatior()
 {
-    //TODO:: my code here
     var operator = prompt("Введите необходимую операцию");
     //Возвращает операцию, введенную пользователем
     return operator;
@@ -23,23 +21,22 @@ function askOperatior()
 function calculate(operand1, operand2, operator)
 {
     var result = null;
-    if (operator == PLUS_OPERATOR)
+    if (operator === PLUS_OPERATOR)
     {
         result = operand1 + operand2;
     }
-    else if(operator == MINUS_OPERATOR)
+    else if(operator === MINUS_OPERATOR)
     {
         result = operand1 - operand2;
-        if (result==0) return "0";
+        if (result ===0 ) return "0";
     }
-    //TODO:: add division, multiplication
-    else if(operator == MULTIPLICATION_OPERATOR)
+    else if(operator === MULTIPLICATION_OPERATOR)
     {
         result = operand1 * operand2;
     }
-    else if(operator == DIVISION_OPERATOR)
+    else if(operator === DIVISION_OPERATOR)
     {
-        if (operand2!=0)
+        if (operand2 !== 0)
         {
             result = operand1 / operand2;
         }
@@ -48,9 +45,9 @@ function calculate(operand1, operand2, operator)
              alert("Деление на ноль невозможно");
         }
     }
-    else if(operator == DEGREE_OPERATOR)
+    else if(operator === SQRT_OPERATOR)
     {
-        result = operand1
+        result = operand1;
         for (i = 1; i < operand2; i++)
         {
             result *= operand1;
