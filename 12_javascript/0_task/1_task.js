@@ -1,5 +1,6 @@
 var KEY_PHRASE = 'Чёрт побери';
 var userText = prompt("Введите сообщение: ", "");
+
 userText.toLowerCase();
 if (userText.indexOf(KEY_PHRASE.toLowerCase()) !== -1)
 {
@@ -7,5 +8,5 @@ if (userText.indexOf(KEY_PHRASE.toLowerCase()) !== -1)
 }
 else
 {
-    alert("Я вас не понимаю")
+    alert("Я вас не понимаю");
 }

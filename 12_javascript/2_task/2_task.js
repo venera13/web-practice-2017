@@ -15,9 +15,9 @@ cat = {
     pet: true,
     age: 6
 };
-fedor.cat = {};
+fedor.cat = cat;
 console.log(fedor);
-cat.name = "Пушок";
+//cat.name = "Пушок";
 console.log(fedor);
 
 

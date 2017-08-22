@@ -14,7 +14,14 @@ function Calculator() {
     };
     this.div = function ()
     {
-        this.result = this.operand1 / this.operand2;
+        if (this.operand2 === 0)
+        {
+            this.result = "Деление на 0 невозможно";
+        }
+        else
+        {
+            this.result = this.operand1 / this.operand2;
+        }
     };
     this.sub = function ()
     {
@@ -27,5 +34,5 @@ function Calculator() {
 }
 var calculator = new Calculator();
 calculator.read();
-calculator.sum();
+calculator.div();
 alert(calculator.getResult());

@@ -3,7 +3,6 @@ var calculator = {
     {
         operand1 = +prompt("Введите число");
         operand2 = +prompt("Введите число");
-        var result = null;
     },
     sum: function ()
     {
@@ -15,7 +14,14 @@ var calculator = {
     },
     div: function ()
     {
-        result = operand1 / operand2;
+        if (operand2 === 0)
+        {
+            alert("Деление на 0 невозможно");
+        }
+        else
+        {
+            result = operand1 / operand2;
+        }
     },
     sub: function ()
     {

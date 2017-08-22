@@ -1,27 +1,49 @@
 function Slider(slidesArray)
 {
+    var NUMBER_SLIDE = 1;
+
     this.slidesArray = slidesArray;
     this.activeSlide = 0;
     this.slidesArray[this.activeSlide].isActive = true;
 
     this.nextSlide = function()
     {
-        //TODO:: add checks for array out of range
-
-        this.getActiveSlide().isActive = false;
-        this.activeSlide += 1;
-        this.getActiveSlide().isActive = true;
+        if (this.activeSlide < NUMBER_SLIDE)
+        {
+            this.getActiveSlide().isActive = false;
+            this.activeSlide += 1;
+            this.getActiveSlide().isActive = true;
+        }
+        else if (this.activeSlide === NUMBER_SLIDE)
+        {
+            this.getActiveSlide().isActive = false;
+            this.activeSlide = 0;
+            this.getActiveSlide().isActive = true;
+        }
     };
 
     this.prevSlide = function()
     {
-        //your code here
+        if (0 < this.activeSlide)
+        {
+            this.getActiveSlide().isActive = false;
+            this.activeSlide -= 1;
+            this.getActiveSlide().isActive = true;
+        }
+        else if (this.activeSlide === 0)
+        {
+            this.getActiveSlide().isActive = false;
+            this.activeSlide = NUMBER_SLIDE;
+            this.getActiveSlide().isActive = true;
+        }
     };
 
     this.getActiveSlide = function()
     {
-        //TODO:: add checks for array out of range
-        return this.slidesArray[this.activeSlide];
+        if (0 <= this.activeSlide <= NUMBER_SLIDE)
+        {
+            return this.slidesArray[this.activeSlide];
+        }
     };
 }
 
@@ -35,6 +57,10 @@ var slideFirst = new Slide("https://www.volgatech.net/upload/iblock/d53/d538dba0
 var slideSecond = new Slide("https://www.volgatech.net/upload/iblock/728/728771406ab598852531787b6a7344b2.jpg");
 var slider = new Slider([slideFirst, slideSecond]);
 
-console.log(slider.getActiveSlide());
-slider.nextSlide();
-console.log(slider.getActiveSlide());
+for (var i=0; i < 5; i++)
+{
+    console.log(slider.getActiveSlide());
+    //slider.nextSlide();
+    slider.prevSlide();
+    console.log(slider.getActiveSlide());
+}
