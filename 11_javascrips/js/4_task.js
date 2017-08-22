@@ -1,16 +1,17 @@
+var FROM_NUMBER = 20;
+var TO_NUMBER = 30;
+
 function primeNumber(minNumber, maxNumber)
 {
-    var FROM_NUMBER = minNumber;
-    var TO_NUMBER = maxNumber;
     prime:
-    for (var i = FROM_NUMBER; i <= TO_NUMBER; i++)
+    for (var i = minNumber; i <= maxNumber; i++)
     {
-        for (j = 2; j < i; j++)
+        for (var j = 2; j < i; j++)
         {
-            if (i%j === 0) continue prime;
+            if (i % j === 0) continue prime;
         }
-        console.log( i )
+        console.log(i)
     }
 }
 
-primeNumber(20,30);
+primeNumber(FROM_NUMBER, TO_NUMBER);
