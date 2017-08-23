@@ -7,7 +7,7 @@ var poem = ['— Скажи-ка, дядя, ведь не даром', 'Моск
     'У наших ушки на макушке!', 'Чуть утро осветило пушки', 'И леса синие верхушки —', 'Французы тут как тут.'];
 
 var ul = document.createElement('ul');
-ul.style = 'none';
+ul.style.listStyleType = 'none';
 document.body.appendChild(ul);
 
 for (var i = 0; i < poem.length; i++)

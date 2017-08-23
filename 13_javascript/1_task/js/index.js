@@ -1,12 +1,12 @@
-var element = document.body.children[0].children[0].childNodes;
-var elem = document.getElementById('productsList').childNodes;
+var products = document.body.children[0].children[0].children;
+var productsList = document.getElementById('productsList').children;
 
-for (var i = 0; i < element.length; i++)
+for (var i = 0; i < products.length; i++)
 {
-    console.log(element[i]);
+    console.log(products[i].textContent);
 }
 
-for (var j = 0; j < elem.length; j++)
+for (var j = 0; j < productsList.length; j++)
 {
-    console.log(elem[j]);
+    console.log(productsList[j].textContent);
 }
