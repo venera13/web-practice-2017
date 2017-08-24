@@ -22,4 +22,3 @@ for (var i = 0; i < poem.length; i++)
     }
     ul.appendChild(li);
 }
-
