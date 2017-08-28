@@ -6,19 +6,13 @@ var poem = ['— Скажи-ка, дядя, ведь не даром', 'Моск
     'О русские штыки?»', 'И вот нашли большое поле:', 'Есть разгуляться где на воле!', 'Построили редут.',
     'У наших ушки на макушке!', 'Чуть утро осветило пушки', 'И леса синие верхушки —', 'Французы тут как тут.'];
 
-var ul = document.createElement('ul');
-ul.style.listStyleType = 'none';
-document.body.appendChild(ul);
-
+$('body').append('<ul>');
+$("ul").css("list-style-type", "none");
 for (var i = 0; i < poem.length; i++)
 {
-    var li = document.createElement('li');
-    var textNode = document.createTextNode(poem[i]);
-
-    li.appendChild(textNode);
-    if ((i !== 0) && (i % 7 === 0))
-    {
-        li.style.marginTop = "30px";
-    }
-    ul.appendChild(li);
+    $("<li>").appendTo("ul").html(poem[i]);
 }
+$("ul li:nth-child(7n+1)").css("margin-top", "30px");
+
+
+
